@@ -6,6 +6,7 @@ import { HomeContainer,BoxCard } from '../styles/homeStyle'
 import SectionText from '../src/Components/SectionText'
 import Footer from '../src/Components/Footer'
 import Team from '../src/Components/Team'
+
 export default function Home() {
   return (
     <HomeContainer >
