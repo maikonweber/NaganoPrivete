@@ -1,7 +1,23 @@
 {
-  // ...
+    "extends": "next", // ...
   "rules": {
-    // Other rules
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+     // Other rules
     "@next/next/no-img-element": "off"
-  }
+  },
+
+"parserOptions": {
+  "ecmaVersion": 2017,
+  "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "modules": true
+  },
+  "env": {
+    "es6": true
+ }
+
+}
+  
 }
