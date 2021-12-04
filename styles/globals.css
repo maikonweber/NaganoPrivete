@@ -14,3 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root{
+  --primary-color: #1BD3EB;
+  --primary-color-hover: #19c3da;
+  --primary-color-active: #16a6b9;
+  --secondary-color: #1E5A7C;
+  --dark-color: #143C53;
+  --dark-color-footer: #082333;
+  --white-color: #FFFFFF;
+  --overlay-top: linear-gradient(90deg, rgba(13, 88, 131, 0.91) 30.03%, rgba(13, 88, 131, 0.83) 39.73%, rgba(5, 2, 2, 0) 100.14%);
+}
+
+body{
+  background-color: var(--dark-color);
+}
