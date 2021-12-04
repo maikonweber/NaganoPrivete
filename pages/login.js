@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import Topbar from "../src/Components/Topbar/index";
 import {Container,Title,Formulario,Input,Button,Label,ContEye} from "../styles/loginStyled";
-import {RiEyeCloseLine,RiEyeLine} from "react-icons/Ri"
+import {RiEyeCloseLine,RiEyeLine} from "react-icons/ri"
 // Sing in form with styled components
 
   const handleSubmit = (e) => {
