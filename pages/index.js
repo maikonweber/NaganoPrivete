@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Topbar from '../src/Components/Topbar'
 import Header from '../src/Components/Header'
 import Card from '../src/Components/Card'
