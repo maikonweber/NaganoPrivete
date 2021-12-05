@@ -1,4 +1,3 @@
-import {Container,Overlay,BoxTitle,Title} from "./style"
 import Link from "next/link"
 import Style from "./style.module.css"
 function Header() {

@@ -1,21 +1,20 @@
 import Link from "next/link"
-import {Container,Cont,Text,Title, Left, Right,ContImage} from "./styled"
-
+import Style from "./style.module.css"
 function SectionText({title,text,image,order}) {
     return (
-        <Container >
-           <Cont>
-               <Left order={order}>
-                    <Title>{title}</Title>
-                    <Text>{text}</Text>
-               </Left>
-               <Right  order={order}>
-                    <ContImage order={order}>
+        <div className={Style.container}>
+           <div className={`${Style.cont} ${order !== "normal" && Style.active}`}>
+               <div className={`${Style.left}  ${order == "normal" && Style.active}`} >
+                    <h2 className={Style.title}>{title}</h2>
+                    <p className={Style.text}>{text}</p>
+               </div>
+               <div className={`${Style.Right} ${order == "normal" && Style.active}`} >
+                    <div className={`${Style.contImage}  ${order == "normal" && Style.active}`} >
                         <img src={image}/>
-                    </ContImage>
-               </Right>
-           </Cont>
-        </Container>
+                    </div>
+               </div>
+           </div>
+        </div>
     )
 }
 
