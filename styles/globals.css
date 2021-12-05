@@ -29,3 +29,8 @@ a {
 body{
   background-color: var(--dark-color);
 }
+
+button{
+  border: none;
+  cursor: pointer;
+}
