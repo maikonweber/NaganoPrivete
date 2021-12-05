@@ -1,13 +1,14 @@
 import {Container,Overlay,BoxTitle,Title} from "./style"
 import Link from "next/link"
+import Style from "./style.module.css"
 function Header() {
     return (
-        <Container>
-            <Overlay></Overlay>
-            <BoxTitle>
-                <Title>Qual o preço da felicidade?</Title>
-            </BoxTitle>
-        </Container>
+        <div className={Style.container}>
+            <div className={Style.overlay}></div>
+            <div className={Style.boxTitle}>
+                <h1 className={Style.title}>Qual o preço da felicidade?</h1>
+            </div>
+        </div >
     )
 }
 
