@@ -1,81 +1,82 @@
 import Link from "next/link"
-import { Container, Cont, List, ItemList, Title, Left, Right, Midlle, Bottom } from "./styled"
+import Style from "./style.module.css"
+
 function Footer({ img, title, text }) {
     return (
-        <Container >
-            <Cont>
-                <Left>
-                    <img className="logo" src="/logo.svg" />
-                    <List>
-                        <ItemList>
+        <div className={Style.container}>
+            <div className={Style.cont}>
+                <div className={Style.left}>
+                    <img className={Style.logo} src="/logo.svg" />
+                    <ul className={Style.list}>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/um.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                        <ItemList>
+                        </li>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/tres.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                    </List>
-                </Left>
-                <Midlle>
-                    <List>
-                        <ItemList>
+                        </li>
+                    </ul>
+                </div>
+                <div  className={Style.midlle}>
+                    <ul className={Style.list}>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/dois.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                        <ItemList>
+                        </li>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/quatro.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                        <ItemList>
+                        </li>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/cinco.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                    </List>
-                </Midlle>
-                <Right>
-                    <List>
-                        <ItemList>
+                        </li>
+                    </ul>
+                </div >
+                <div className={Style.right}>
+                    <ul className={Style.list}>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/um.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                        <ItemList>
+                        </li>
+                        <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/tres.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </ItemList>
-                    </List>
-                </Right>
-            </Cont>
-            <Bottom>©2021 por Nagano Soluções Financeiras</Bottom>
-        </Container>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button className={Style.button}>©2021 por Nagano Soluções Financeiras</button>
+        </div>
     )
 }
 
