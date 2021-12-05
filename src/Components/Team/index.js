@@ -1,30 +1,30 @@
 import Link from "next/link"
-import {Container,Cont,TabsCont,Tabs,Title,Right,Left,ContImage,Text,TitleName} from "./styled"
+import Style from "./style.module.css"
 function Team({img}) {
     return (
-        <Container >
-            <Title>Our Team</Title>
-           <Cont>
-                <Left>
-                    <ContImage>
+        <div className={Style.container}>
+            <h1 className={Style.title}>Our Team</h1>
+           <div className={Style.cont}>
+                <div className={Style.left}>
+                    <div className={Style.contImage}>
                         <img src="/people.png" alt="26565"/>
-                    </ContImage>
-                </Left>
-                <Right>
-                    <TitleName>Julia Martins</TitleName>
-                    <Text>
+                    </div>
+                </div>
+                <div className={Style.right}>
+                    <strong className={Style.titleName}>Julia Martins</strong>
+                    <p className={Style.text}>
                          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                    </Text>
-                    <TabsCont>
-                        <Tabs/>
-                        <Tabs/>
-                        <Tabs/>
-                    </TabsCont>
-                </Right>
-           </Cont>
-           <img className="bg" src="/bg.png" alt="26565"/>
+                    </p>
+                    <div className={Style.tabsCont}>
+                        <p className={Style.tabs}/>
+                        <p className={Style.tabs}/>
+                        <p className={Style.tabs}/>
+                    </div>
+                </div>
+           </div>
+           <img className={Style.bg} src="/bg.png" alt="26565"/>
            
-        </Container>
+        </div>
     )
 }
 
