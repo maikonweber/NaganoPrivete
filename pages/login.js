@@ -1,6 +1,5 @@
 import React,{useState} from "react";
-import Topbar from "../src/Components/Topbar/index";
-import {Container,Title,Formulario,Input,Button,Label,ContEye} from "../styles/loginStyled";
+import Style from "../styles/login.module.css";
 import {RiEyeCloseLine,RiEyeLine} from "react-icons/ri"
 // Sing in form with styled components
 
@@ -16,29 +15,29 @@ import {RiEyeCloseLine,RiEyeLine} from "react-icons/ri"
 const Login = () => {
     const [show,setShow] = useState(false);
         return (
-            <Container>
-                <Formulario onSubmit={(e)=>handleSubmit(e)} >
-                    <Title>Login</Title>
-                    <Label>
+            <div className={Style.container}>
+                <form  className={Style.formulario} onSubmit={(e)=>handleSubmit(e)} >
+                    <strong  className={Style.title}>Login</strong>
+                    <label  className={Style.label}>
                     Email:
-                    <Input type="text" />
-                    </Label>
-                    <Label>
+                    <input  className={Style.input} type="text" />
+                    </label>
+                    <label  className={Style.label}>
                     Password:
-                    <Input type={show ? "text":"password"} />
-                    <ContEye onClick={()=>setShow(!show)}>
+                    <input  className={Style.input} type={show ? "text":"password"} />
+                    <div  className={Style.contEye} onClick={()=>setShow(!show)}>
                         {show 
                         ? <RiEyeLine size={20}/>
                         :<RiEyeCloseLine size={20}/>
                         }
-                    </ContEye>
-                    </Label>
+                    </div>
+                    </label>
 
-                    <Button type="send" >
+                    <button   className={Style.button} type="send" >
                         Entar
-                    </Button>
-                </Formulario>
-            </Container>
+                    </button >
+                </form>
+            </div>
 
         );
 }
