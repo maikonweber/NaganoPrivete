@@ -6,10 +6,22 @@ import { HomeContainer,BoxCard } from '../styles/homeStyle'
 import SectionText from '../src/Components/SectionText'
 import Footer from '../src/Components/Footer'
 import Team from '../src/Components/Team'
+import Modal from '../src/Components/Modal'
+import { useState } from 'react'
 
 export default function Home() {
+  const [modal, setModal] = useState(false)	
+  const [title, setTitle] = useState('')
+ 
+  function handleModal(title){ 
+    setModal(!modal)
+    setTitle(title)
+  }
+
   return (
+
     <HomeContainer >
+      <Modal open={modal} isOpen={setModal} title={title}/>
       <Head>
         <title>Nagano Consultoria</title>
         <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
@@ -20,9 +32,9 @@ export default function Home() {
       <Topbar/>
       <Header/>
       <BoxCard > 
-          <Card img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
-          <Card img="/chart.png" title="Credito Imobilário" text="Realizamos o seu sonho credito e soluções financeiras fornecidas pela caixa, adequadas aos objetivos e momento de vida." />
-          <Card img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal}  img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
+          <Card openModal={handleModal} img="/chart.png" title="Credito Imobilário" text="Realizamos o seu sonho credito e soluções financeiras fornecidas pela caixa, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal} img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
       </BoxCard>
 
       <SectionText 
@@ -39,8 +51,8 @@ export default function Home() {
       />
 
       <Team img="/people.png"/>
-    
-      <Footer/>
+  
+      <Footer/>      
     </HomeContainer>
   )
 }
