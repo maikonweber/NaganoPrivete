@@ -34,7 +34,7 @@ export default function Home() {
       <BoxCard > 
           <Card openModal={handleModal}  img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
           <Card openModal={handleModal} img="/chart.png" title="Credito Imobilário" text="Realizamos o seu sonho credito e soluções financeiras fornecidas pela caixa, adequadas aos objetivos e momento de vida." />
-          <Card openModal={handleModal} img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal}img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
       </BoxCard>
 
       <SectionText 

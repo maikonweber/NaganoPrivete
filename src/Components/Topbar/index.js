@@ -3,7 +3,7 @@ import Link from "next/link"
 import {Container,Nav,Cont,ContLink,Text,Button} from "./styled"
 
 
-function Topbar() {
+function Topbar({image} ) {
     return (
         <Container  id="navbar">
             <Nav>
