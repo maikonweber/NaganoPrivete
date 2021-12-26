@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Topbar from '../src/Components/Topbar'
 import Header from '../src/Components/Header'
 import Card from '../src/Components/Card'
-import { HomeContainer,BoxCard } from '../styles/homeStyle'
+import Style from '../styles/homeStyle.module.css'
 import SectionText from '../src/Components/SectionText'
 import Footer from '../src/Components/Footer'
 import Team from '../src/Components/Team'
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
 
-    <HomeContainer >
+    <main className={Style.homeContainer}>
       <Modal open={modal} isOpen={setModal} title={title}/>
       <Head>
         <title>Nagano Consultoria</title>
@@ -31,11 +31,11 @@ export default function Home() {
 
       <Topbar/>
       <Header/>
-      <BoxCard > 
+      <div className={Style.boxCard} > 
           <Card openModal={handleModal}  img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
           <Card openModal={handleModal} img="/chart.png" title="Credito Imobilário" text="Realizamos o seu sonho credito e soluções financeiras fornecidas pela caixa, adequadas aos objetivos e momento de vida." />
           <Card openModal={handleModal}img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
-      </BoxCard>
+      </div>
 
       <SectionText 
           title="Qual o nosso diferencal?"
@@ -53,6 +53,6 @@ export default function Home() {
       <Team img="/people.png"/>
   
       <Footer/>      
-    </HomeContainer>
+    </main>
   )
 }
