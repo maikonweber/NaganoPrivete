@@ -25,7 +25,7 @@ function CardSlice() {
             slider[0].addEventListener('click', (event) => {
                const value = event.target.style.left;
                const value2 = value.slice(0, -1);
-               const result = 2000 * parseInt(value);
+               const result = 1000 * parseInt(value);
                setValue(result);
                
             
