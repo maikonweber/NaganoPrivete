@@ -111,3 +111,47 @@
        background-color: var(--primary-color);
 }
 
+
+@media (max-width:1200px){
+        .container{
+                height: auto;
+                align-items: center;
+                justify-content: center;
+        }
+        .container img.bg{
+                display: none;
+        }
+        .cont{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: auto;
+        }
+        .contImage{
+            border-radius: 20px;    
+            padding: 5px;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .right{
+                max-width: 450px;
+        }
+        .contImage img{
+                top: 0;
+                left: 0;
+                display: block;
+                position: initial;
+        }
+        .contImage::before{
+                display: none;
+        }
+
+        .contImage::after{
+        display: none;
+        }
+}
