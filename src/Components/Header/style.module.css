@@ -35,3 +35,10 @@
         color:var(--primary-color);
 }
 
+
+
+@media (max-width: 1200px){
+        .title{
+                font-size:5rem;
+        }
+}
