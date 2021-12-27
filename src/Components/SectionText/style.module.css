@@ -134,6 +134,51 @@
                 align-items: center;
         }
 
+        
+.contImage::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(121.22deg, #1BD3EB 10.66%, #1E8B99 92.42%);
+        border-radius: 30px;
+        position: initial;
+        z-index: 1;
+        top:  0px;
+        left: 0px;
+}
+
+.contImage.active::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(121.22deg, #1BD3EB 10.66%, #1E8B99 92.42%);
+        border-radius: 30px;
+        position: initial;
+        z-index: 1;
+        top:  0px;
+        left: 0px;
+}
+.contImage img{   
+        position: initial;
+        left: -40px;
+        top:  -50px;
+        border-radius: 40px;
+        display: block;
+        overflow: hidden;
+        z-index: 3;
+}
+
+.contImage.active img{   
+        position: initial;
+        left:  40px;
+        top:  -50px;
+        border-radius: 40px;
+        display: block;
+        overflow: hidden;
+        z-index: 3;
+}
         .left{
                 flex:1;
                 display: flex;
