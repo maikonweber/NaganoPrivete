@@ -70,3 +70,63 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width:1200px){
+    .container{
+        height: auto;
+    }
+    .cont{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .left img.logo{
+        width: 100px;
+        height: 150px;
+        position: initial;
+    }
+    
+    .left ul{
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .midlle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .midlle ul{
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right ul{
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+}
