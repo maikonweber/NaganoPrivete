@@ -38,20 +38,29 @@ export const getServerSideProps = async (ctx) => {
       const { 'nextauth.token': token } = parseCookies(ctx)
       // get token of server
       if (!token) {
-        Router.push('/')
+       return {
+         redirect: {
+            destination: '/login',
+            permanent: false,
+       }
+      }
       } else {
         console.log('token', token)
-        const { data } = await v1_teste(token)
-        console.log('data', data)
-        if (data === true) {
+        const data = await v1_teste(token)
+        console.log(data)
+        if (data.status === true) {
           return {
             props: {
               token: token,
-              data: data.data
             }
           }
         } else {
-          Router.push('/')
+          return {
+            redirect: {
+              destination: '/',
+              permanent: false,
+            }
+          } 
         }
       }
       return {
