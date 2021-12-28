@@ -2,9 +2,9 @@ import React,{useState} from "react";
 import Style from "../styles/login.module.css";
 import {RiEyeCloseLine,RiEyeLine} from "react-icons/ri"
 import { loginIn } from '../src/services/services';
+import {setCookie} from 'nookies';
+import Router from 'next/router';
 // Sing in form with styled components
-
- 
 
 const Login = () => {
     const [password, setPassword] = useState('');
@@ -16,8 +16,20 @@ const Login = () => {
         if (email != '' && password != '')  {
            console.log(email,password)    
            const token = await loginIn(email,password)          
-           } else {
-            alert('Email ou senha incorretos')     
+           if (token) {
+               setCookie(undefined, 'nextauth.token', token[0], {
+                   maxAge: 60 * 60 * 60 * 60,
+               });
+      
+               Router.push('/dashboard');
+      
+            } else {
+      
+                alert('Email ou senha incorretos')
+            }
+        
+            } else {
+            alert('Email ou senha Invalidos')     
            }  
        }
 
@@ -48,7 +60,6 @@ const Login = () => {
                         }
                     </div>
                     </label>
-
                     <button   className={Style.button} type="send" >
                         Entar
                     </button >

@@ -1,33 +1,18 @@
 import { createContext, useEffect, useState, useContext} from 'react';
-import { signinRequest } from '../services/auth';
-import {setCookie} from 'nookies';
+import {parseCookies, setCookie} from 'nookies';
 import Router from 'next/router';
 
 export const AuthContext = createContext({});
 
 export function AuthProvider({ children }) {
-    const isAuthenticated = !!user;
+    const auth = 'auth'
     useEffect(() => {
-        if (isAuthenticated) {
-            Router.push('/');
-        }
-
-    const [user, setUser] = useState<User || null>(null);
-    async function login(email, password) {
-     const { token, user }  =  await signinRequest({
-            email,
-            password, 
-     });
-       setCookie(undefined, 'naganoToken', token, {
-           maxAge: 60 * 60 * 60 * 60,
-       });
-
-       setUser(user);
-       Router.push('/dashboard');
-    }
+        const { 'nextauth.token': token } = parseCookies()
+        
+    }, []);
 
     return (
-        <AuthContext.Provider value={user ,isAuthenticated, login}>
+        <AuthContext.Provider value={auth}>
             {children}
         </AuthContext.Provider>
     );
