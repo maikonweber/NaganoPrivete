@@ -1,8 +1,11 @@
-export async function v1_teste(from, to) {
-    const response = await fetch(`http://143.198.180.153/api/v1`, {
-      method: 'GET',
+export async function v1_teste(token) {
+  console.log(token)
+    const response = await fetch(`http://143.198.180.153/api/v1/token`, {
+      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-   
+      body: JSON.stringify({
+        token: token
+    })
     })
     return await response.json();
   }

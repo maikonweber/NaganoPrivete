@@ -7,6 +7,9 @@ import CardSlice from '../src/Components/cardSlice/cardSlice'
 import Style from "../styles/consignados.module.css"
 import { GetServerSideProps } from 'next'
 import { parseCookies } from 'nookies'
+import Router from 'next/router'
+import  {v1_teste} from '../src/services/services'
+
 
 export default function Home() {
   const [modal, setModal] = useState(false)
@@ -31,16 +34,29 @@ export default function Home() {
 }
 
 export const getServerSideProps = async (ctx) => {
-     const { ['next.auth.token']: token } = parseCookies(ctx)
+      // get token of browser
+      const { 'nextauth.token': token } = parseCookies(ctx)
+      // get token of server
       if (!token) {
-        return {
-          redirect: {
-            destination: '/',
-            permanent: false,
+        Router.push('/')
+      } else {
+        console.log('token', token)
+        const { data } = await v1_teste(token)
+        console.log('data', data)
+        if (data === true) {
+          return {
+            props: {
+              token: token,
+              data: data.data
+            }
           }
+        } else {
+          Router.push('/')
         }
       }
       return {
-        props: {}
+        props: {
+          token
+        }
       }
     }
