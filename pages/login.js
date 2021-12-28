@@ -17,7 +17,8 @@ const Login = () => {
            console.log(email,password)    
            const token = await loginIn(email,password)          
            if (token) {
-               setCookie(undefined, 'nextauth.token', token[0], {
+               console.log(token)
+               setCookie(undefined, 'nextauth.token', token[0].token, {
                    maxAge: 60 * 60 * 60 * 60,
                });
       
