@@ -12,7 +12,7 @@ import { Button } from "../Topbar/styled";
 
 
 
-function CardSlice() {	
+function CardSlice({openModal}) {	
     const [value, setValue] = React.useState(0);
     if (typeof window === 'object') {
         // Check if document is finally loaded
@@ -44,11 +44,11 @@ function CardSlice() {
         <div className={Style.container}>
             <div className={Style.text}>
                 <h1 className={Style.textTitle}>Qual o Valor?</h1>
-                <h2 className={Style.textValue} > {value} </h2>
+                <h2 className={Style.textValue} > {`R$:${value} `} </h2>
                 <Box sx={{ width: "100%",padding:"15px 0 30px 0" }}>
                     <Slider onChange={(e)=>{valueSelect(e)}} id='slider' defaultValue={50}  />
                 </Box>
-                <button>Simule</button>
+                <button onClick={(() => openModal('', value))}>Simule</button>
             </div>
         </div >
 

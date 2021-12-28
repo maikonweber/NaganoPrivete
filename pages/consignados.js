@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Topbar from '../src/Components/Topbar'
-import { HomeContainer, BoxCard } from '../styles/homeStyle'
 import Footer from '../src/Components/Footer'
 import Modal from '../src/Components/Modal'
 import { useState } from 'react'
@@ -11,17 +10,18 @@ import Style from "../styles/consignados.module.css"
 export default function Home() {
   const [modal, setModal] = useState(false)
   const [title, setTitle] = useState('')
+  const [msg, setMsg] = useState('')
 
-  function handleModal(title) {
+  function handleModal(title, msg) {
     setModal(!modal)
     setTitle(title)
+    setMsg(msg)
   }
 
   return (
-
-    <HomeContainer >
+    <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={title} />
+      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`HomeEquality : ${msg}`} />
       <Head>
         <title>Credito Consignados</title>
         <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
@@ -36,7 +36,7 @@ export default function Home() {
             <span>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</span>
           </div>
           <div className={Style.right}>
-            <CardSlice ></CardSlice>
+            <CardSlice openModal={handleModal} ></CardSlice>
           </div>
         </div>
       </div>
@@ -79,8 +79,7 @@ export default function Home() {
               Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
             </div>
       </section>
-
       <Footer />
-    </HomeContainer>
-  )
+      </>
+  ) 
 }

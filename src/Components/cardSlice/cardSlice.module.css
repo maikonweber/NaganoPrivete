@@ -35,7 +35,7 @@
 .textValue{
     color: var(--secondary-color);
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .slider {
     height: 100%;
