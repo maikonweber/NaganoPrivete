@@ -9,11 +9,28 @@ import { GetServerSideProps } from 'next'
 import { parseCookies } from 'nookies'
 import Router from 'next/router'
 import  {v1_teste} from '../src/services/services'
+import Table from '../src/Components/Table'
 
 
 export default function Home() {
   const [modal, setModal] = useState(false)
-
+  const data = [
+    {nome:"Jarvolino",sobrenome:"Maneiro",email:"email@gmail.com",telefone:"11997821547"},
+    {nome:"Renata",sobrenome:"Almeida",email:"esse@gmail.com",telefone:"11997821547"},
+    {nome:"Fabiana",sobrenome:"Souza",email:"email@gmail.com",telefone:"11997821547"},
+    {nome:"Alessandra",sobrenome:"Ribeiro",email:"email@outlook.com",telefone:"11997821547"},
+    {nome:"Mariana",sobrenome:"Martins",email:"email@live.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
+  ]
   // Create table
 
   return (
@@ -21,7 +38,7 @@ export default function Home() {
       <Topbar />
         
 
-      
+      <Table data={data}/>
 
       <Footer />
       </>
