@@ -10,12 +10,11 @@ function Table({data}) {
                 <thead>
                     <tr>
                         <th>Nome</th>
-
                         <th>Sobrenome</th>
-
                         <th>Email</th>
-
                         <th>Telefone</th>
+                        <th>Mensagem</th>
+                        <th>Data</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,7 +30,8 @@ function Table({data}) {
                                 <td>{data.phone}</td>
 
                                 <td>{data.message}</td>
-                                <td>{data.created}</td>
+                                
+                                <td>{new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' }).format(data.create)}</td>
                             </tr>
                         )
                     })}
