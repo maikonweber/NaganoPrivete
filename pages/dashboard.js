@@ -13,19 +13,14 @@ import  {v1_teste} from '../src/services/services'
 
 export default function Home() {
   const [modal, setModal] = useState(false)
-  const [title, setTitle] = useState('')
-  const [msg, setMsg] = useState('')
 
-  function handleModal(title, msg) {
-    setModal(!modal)
-    setTitle(title)
-    setMsg(msg)
-  }
+  // Create table
 
   return (
     <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`HomeEquality : ${msg}`} />
+        
+
       
 
       <Footer />
