@@ -17,7 +17,9 @@
         color:white;
         display:flex;
 }
-
+.contLinkMobile{
+        display: none;
+}
 .navMobile{
         height: 100%;
         width: 100px;
@@ -29,6 +31,14 @@
         color: #FFF;
         display: none;
         padding-right: 20px;
+}
+.btnBars{
+        font-size: 1.8rem;
+        color: #FFF;
+        border: none;
+        padding: 15px 20px 5px 20px;
+        background-color: transparent;
+        display: none;
 }
 .cont{
         display: flex;
@@ -73,8 +83,30 @@
         .cont{
                 display: none;
         }
-
+        .btnBars{
+                display: initial;
+        }
         .navMobile{
                 display: flex;
+                position: fixed;
+                height: 100vh;
+                width: 100vw;
+                z-index: 999;
+                padding: 0;
+        }
+
+        .contLinkMobile{
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                height: 0vh;
+                width: 100vw;
+                overflow: hidden;
+                background-color: var( --dark-color-footer);
+                transition: 300ms;
+                top: 0;
+        }
+        .contLinkMobile.active{
+                height: 100vh;
         }
 }
