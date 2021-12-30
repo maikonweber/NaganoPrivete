@@ -1,23 +1,26 @@
 import react from 'react';
 import Link from "next/link"
-import {Container,Nav,Cont,ContLink,Text,Button} from "./styled"
-
-
-function Topbar({image} ) {
+import Style from "./style.module.css"
+import { FaBars } from "react-icons/fa"
+function Topbar({ image }) {
     return (
-        <Container  id="navbar">
-            <Nav>
+        <div className={Style.container} id="navbar">
+            <nav className={Style.nav}>
                 <Link href="/"><img src="/logo.svg" alt="Logo Nagano consultoria." /></Link>
-                <Cont >
-                    <ContLink >
-                        <Link href="/"><Text>Home</Text></Link>
-                        <Link href="/"><Text>About us</Text></Link>
-                        <Link href="/"><Text>Contact</Text></Link>
-                        <Button>Simule</Button>
-                    </ContLink>
-                </Cont>
-            </Nav>
-        </Container>
+                <div className={Style.cont}>
+                    <div className={Style.contLink} >
+                        <Link href="/"><span className={Style.text}>Home</span></Link>
+                        <Link href="/"><span className={Style.text}>About us</span></Link>
+                        <Link href="/"><span className={Style.text}>Contact</span></Link>
+                        <button className={Style.button}>Simule</button>
+                    </div>
+                </div>
+                <div className={Style.navMobile}>
+                    <FaBars />
+                </div>
+            </nav>
+
+        </div>
     )
 }
 

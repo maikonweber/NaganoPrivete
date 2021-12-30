@@ -39,7 +39,7 @@
         text-align: center;
 }
 .contImage {
-        width: 500px;
+        max-width: 500px;
         height: 500px;
         background-color: red;
         border-radius: 50%;
@@ -146,6 +146,7 @@
                 left: 0;
                 display: block;
                 position: initial;
+                width: 100%;
         }
         .contImage::before{
                 display: none;

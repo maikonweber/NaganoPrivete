@@ -1,6 +1,5 @@
-import styled from "styled-components";
 
-export const Container = styled.div`
+.container{
     background:var(--dark-color);
     width:100%;
     display:flex;
@@ -8,38 +7,50 @@ export const Container = styled.div`
     position: fixed;
     z-index: 22;
     top: 0;
-`
+}
 
-export const Nav = styled.nav`
+.nav{
         width:100%;
         max-width:1440px;
         height: 120px;
         padding:15px;
         color:white;
         display:flex;
-`
+}
 
-export const Cont = styled.div`
+.navMobile{
+        height: 100%;
+        width: 100px;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.8rem;
+        color: #FFF;
+        display: none;
+        padding-right: 20px;
+}
+.cont{
         display: flex;
         width: 100%;
         color: #FFF;
-`
+}
 
-export const ContLink = styled.div`
+.contLink{
        display:flex;
        flex:1;
        align-items:center;
        justify-content:flex-end;
-`
+}
 
-export const Text = styled.span`
+.text{
         font-weight:bold;
         color:var(--primary-color);
         padding:1.2rem;
         cursor:pointer;
-`
+}
 
-export const Button = styled.button`
+.button {
         background:var(--primary-color);
         color:var(--secondary-color);
         font-weight: bold;
@@ -47,11 +58,23 @@ export const Button = styled.button`
         padding: 7px 0;
         border-radius: 7px;
         margin-left: 1.2rem;
-        &:active{
-             background: "var(--primary-color-active)" 
-        } 
         
-        &:hover{ 
-            background: "var(--primary-color-hover)"
+}
+
+.button:active{
+        background: "var(--primary-color-active)" 
+   } 
+   
+.button:hover{ 
+       background: "var(--primary-color-hover)"
+}
+
+@media (max-width: 1200px){
+        .cont{
+                display: none;
         }
-`
+
+        .navMobile{
+                display: flex;
+        }
+}

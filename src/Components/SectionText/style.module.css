@@ -37,14 +37,14 @@
 .title {
         font-size: 4rem;
         font-weight: bold;
-        width: 600px;
+        max-width: 600px;
         margin-bottom: 10px;
         color: var(--primary-color);
 }
 
 .text {
         font-size: 1.3rem;
-        width: 600px;
+        max-width: 600px;
         color: var(--primary-color);
 
 }
@@ -73,6 +73,7 @@
         border-radius: 40px;
         z-index: 2;
         background: var(--secondary-color);
+        width: 80%;
         
 }
 
@@ -168,6 +169,7 @@
         display: block;
         overflow: hidden;
         z-index: 3;
+        width: 100%;
 }
 
 .contImage.active img{   
