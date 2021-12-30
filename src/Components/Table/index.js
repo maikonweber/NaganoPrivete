@@ -19,16 +19,19 @@ function Table({data}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.map(data=>{
+                    {data.token.map(data=>{
                         return(
                             <tr>
-                                <td>{data.nome}</td>
+                                <td>{data.first_name}</td>
         
-                                <td>{data.sobrenome}</td>
+                                <td>{data.last_name}</td>
         
                                 <td>{data.email}</td>
         
-                                <td>{data.telefone}</td>
+                                <td>{data.phone}</td>
+
+                                <td>{data.message}</td>
+                                <td>{data.created}</td>
                             </tr>
                         )
                     })}

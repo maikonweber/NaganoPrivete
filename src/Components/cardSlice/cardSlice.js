@@ -3,10 +3,6 @@ import Style from "./cardSlice.module.css"
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import React from 'react';
-import { Button } from "../Topbar/styled";
-
-
-
 
 
 

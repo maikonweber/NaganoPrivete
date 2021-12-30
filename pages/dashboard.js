@@ -8,12 +8,13 @@ import Style from "../styles/consignados.module.css"
 import { GetServerSideProps } from 'next'
 import { parseCookies } from 'nookies'
 import Router from 'next/router'
-import  {v1_teste} from '../src/services/services'
+import  {v1_teste, getAllLeads} from '../src/services/services'
 import Table from '../src/Components/Table'
 
 
-export default function Home() {
+export default function Home(datax) {
   const [modal, setModal] = useState(false)
+  console.log(datax)
   const data = [
     {nome:"Jarvolino",sobrenome:"Maneiro",email:"email@gmail.com",telefone:"11997821547"},
     {nome:"Renata",sobrenome:"Almeida",email:"esse@gmail.com",telefone:"11997821547"},
@@ -38,7 +39,7 @@ export default function Home() {
       <Topbar />
         
 
-      <Table data={data}/>
+      <Table data={datax}/>
 
       <Footer />
       </>
@@ -48,6 +49,7 @@ export default function Home() {
 export const getServerSideProps = async (ctx) => {
       // get token of browser
       const { 'nextauth.token': token } = parseCookies(ctx)
+      const datax = await getAllLeads(token)
       // get token of server
       if (!token) {
        return {
@@ -57,13 +59,12 @@ export const getServerSideProps = async (ctx) => {
        }
       }
       } else {
-        console.log('token', token)
         const data = await v1_teste(token)
-        console.log(data)
+    
         if (data.status === true) {
           return {
             props: {
-              token: token,
+              token: datax,
             }
           }
         } else {
