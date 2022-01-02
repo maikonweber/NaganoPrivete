@@ -4,6 +4,7 @@ import {RiEyeCloseLine,RiEyeLine} from "react-icons/ri"
 import { loginIn } from '../src/services/services';
 import {setCookie} from 'nookies';
 import Router from 'next/router';
+import Head from 'next/head';
 // Sing in form with styled components
 
 const Login = () => {
