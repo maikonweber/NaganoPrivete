@@ -47,7 +47,7 @@ const Login = () => {
         
             <div className={Style.container}>
                   <Head>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Nagano Consultoria</title>
         <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
         , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
