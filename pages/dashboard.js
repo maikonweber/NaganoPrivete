@@ -37,7 +37,14 @@ export default function Home(datax) {
   return (
     <>
       <Topbar />
-        
+      <Modal open={modal} isOpen={setModal} title={title}/>
+      <Head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <title>Nagano Consultoria</title>
+        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
+        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
       <Table data={datax}/>
 

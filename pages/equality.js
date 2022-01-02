@@ -22,6 +22,7 @@ export default function Home() {
       <Topbar />
       <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`HomeEquality : ${msg}`} />
       <Head>
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
         <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
         , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />

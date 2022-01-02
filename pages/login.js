@@ -44,7 +44,15 @@ const Login = () => {
 
 
     return (
+        
             <div className={Style.container}>
+                  <Head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <title>Nagano Consultoria</title>
+        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
+        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
                 <form  className={Style.formulario} onSubmit={(e)=>handleSubmit(e)} >
                     <strong  className={Style.title}>Login</strong>
                     <label  className={Style.label}>
