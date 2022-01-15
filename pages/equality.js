@@ -32,8 +32,8 @@ export default function Home() {
       <div className={Style.header}>
         <div className={Style.container}>
           <div className={Style.left}>
-            <h1>Faça a gora mesmo a simulação do seu emprestimo</h1>
-            <span>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</span>
+            <h1>Como é o Empréstimo com Garantia de Imóvel?</h1>
+            <span>O Empréstimo com Garantia de Imóvel do Inter, também conhecido como Home Equity, funciona assim: você pode pedir um empréstimo a partir de R$ 30 mil e coloca seu imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso..</span>
           </div>
           <div className={Style.right}>
             <CardSlice openModal={handleModal} ></CardSlice>
@@ -44,25 +44,26 @@ export default function Home() {
       <section className={Style.sectionCards}>
         <div className={Style.container}>
           <div className={Style.top}>
-            <h1>Como funciona o processo de emprestimo</h1>
-            <p>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
+            <h1>Como é o Empréstimo com Garantia de Imóvel?</h1>
+            <p>O Empréstimo com Garantia de Imóvel do Inter, também conhecido como Home Equity, funciona assim: você pode pedir um empréstimo a partir de R$ 30 mil e coloca seu imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
+             <p>As taxas e prazos dessa modalidade de empréstimo são as melhores do mercado. Além disso, você pode pedir seu empréstimo de até 50% do valor do seu imóvel sem precisar vender ou sair dele.</p>
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+            <strong>Emprestimo Garantia FGTS</strong>
+              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário</p>
               <strong>Simule</strong>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Emprestimo Cred IPVA </strong>
+              <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
               <strong>Simule</strong>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+            <strong>Credito Pessoal</strong>
+              <p>uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
               <strong>Simule</strong>
             </div>
           </div>
@@ -74,9 +75,10 @@ export default function Home() {
               <img src="/pc.jpg" alt="image"/>
             </div>
             <div className={Style.rightCont}>
-              <h1>Credito com garantia</h1>
-              <p>Faça agora simulação com as menores taxas do mercadoCom seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.
-              Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
+            <h1>Atendimento Personalizado.</h1>
+              <p>Na Nagano Consultoria temos um atendimento personalizado e humanizado, entremos em contato sempre com nosso clientes,
+                verificando todas as possibilidade de emprestimos. Você terá aúxilio do início ao fim o melhor atendimento
+                com nossos Consultores Auxiliando em sua aquisição de credito.</p>
             </div>
       </section>
       <Footer />

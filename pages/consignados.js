@@ -24,16 +24,17 @@ export default function Home() {
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
-        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
-        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <meta name="description" content="Crédito Consignado
+Disponível para você usar quando e como quiser. Aproveite para realizar seus planos: reforma da casa, viagem dos sonhos, organizar sua vida financeira" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={Style.header}>
         <div className={Style.container}>
           <div className={Style.left}>
-            <h1>Faça a gora mesmo a simulação do seu emprestimo</h1>
-            <span>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</span>
+            <h1>Faça a gora mesmo a simulação do seu emprestimo consignado</h1>
+            <span>Analisamos as todas possibilidades de credito consignado, verificamos em todos os bancos parceiros
+              oferecemos atendimento especializado com consultores a pronta disposição para ajudar na melhor opção de credito.</span>
           </div>
           <div className={Style.right}>
             <CardSlice openModal={handleModal} ></CardSlice>
@@ -45,24 +46,25 @@ export default function Home() {
         <div className={Style.container}>
           <div className={Style.top}>
             <h1>Como funciona o processo de emprestimo</h1>
-            <p>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
+            <p>O significado de consignado está atrelado à particularidade desse crédito. Ele é descontado diretamente no contracheque, holerite ou benefício do INSS. Ele é mais comum para funcionários públicos, aposentados e pensionistas. Esqueça a burocracia. Com a gente, você não precisa de avalista e seu crédito fica disponível rapidinho.</p>
+            <p>Verificamos em todos os bancos parceiros as possibilidades de emprestimos consignados, sempre garantindo para você os melhores valores taxas e valores liberados.</p>
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Emprestimo Garantia FGTS</strong>
+              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário.</p>
               <strong>Simule</strong>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Home Equality</strong>
+              <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
               <strong>Simule</strong>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Credito Pessoal </strong>
+              <p> uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso.</p>
               <strong>Simule</strong>
             </div>
           </div>
@@ -74,9 +76,10 @@ export default function Home() {
               <img src="/pc.jpg" alt="image"/>
             </div>
             <div className={Style.rightCont}>
-              <h1>Credito com garantia</h1>
-              <p>Faça agora simulação com as menores taxas do mercadoCom seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.
-              Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
+              <h1>Atendimento Personalizado</h1>
+              <p> Nós da Nagano Consultoria temos um atendimento personalizado e humanizado, entremos em contato sempre com nosso clientes,
+                verificando todas as possibilidade de emprestimos. Você terá aúxilio do início ao fim o melhor atendimento
+                com nossos Consultores Auxiliando em sua aquisição de credito.</p>
             </div>
       </section>
       <Footer />

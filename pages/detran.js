@@ -24,16 +24,16 @@ export default function Home() {
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
-        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
-        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <meta name="description" content="Cred IPVA é uma linha especial de financiamento para pessoa física
+        ,direcionado ao pagamento de encargos como IPVA (atrasado ou não), DPVAT (seguro obrigatório), multas de trânsito e taxa de licenciamento. O empréstimo está disponível somente para o pagamento de taxas de carrosa" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={Style.header}>
         <div className={Style.container}>
           <div className={Style.left}>
-            <h1>Faça a gora mesmo a simulação do seu emprestimo</h1>
-            <span>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</span>
+            <h1>Faça a gora mesmo a simulação do seu Cred IPVA</h1>
+            <span>O Cred IPVA é uma linha especial de financiamento para correntistas, pessoas físicas, direcionado ao pagamento de encargos como IPVA (atrasado ou não), DPVAT (seguro obrigatório), multas de trânsito e taxa de licenciamento. O empréstimo está disponível somente para o pagamento de taxas de carros.</span>
           </div>
           <div className={Style.right}>
             <CardSlice openModal={handleModal} ></CardSlice>
@@ -45,24 +45,24 @@ export default function Home() {
         <div className={Style.container}>
           <div className={Style.top}>
             <h1>Como funciona o processo de emprestimo</h1>
-            <p>Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
+            <p> A liberação do empréstimo é ágil e sem burocracia. O cliente tem duas opções de prazo e taxas. De 2 a 12 meses, a taxa de juros é de 4,10% ao mês, e de 13 a 24 meses, 4,80% ao mês. O pagamento é feito por meio de débito direto em conta-corrente..</p>
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Emprestimo Garantia FGTS</strong>
+              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário</p>
               <strong>Simule</strong>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Home Equality</strong>
+              <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso</p>
               <strong>Simule</strong>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito com garantia</strong>
-              <p>Faça agora simulação com as menores taxas do mercado</p>
+              <strong>Credito Pessoal</strong>
+              <p>uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
               <strong>Simule</strong>
             </div>
           </div>
@@ -74,9 +74,10 @@ export default function Home() {
               <img src="/pc.jpg" alt="image"/>
             </div>
             <div className={Style.rightCont}>
-              <h1>Credito com garantia</h1>
-              <p>Faça agora simulação com as menores taxas do mercadoCom seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.
-              Com seu carro como garantia do empréstimo, você tem juros a partir de 0,99% ao mês e as melhores condições.</p>
+              <h1>Atendimento Personalizado.</h1>
+              <p>Na Nagano Consultoria temos um atendimento personalizado e humanizado, entremos em contato sempre com nosso clientes,
+                verificando todas as possibilidade de emprestimos. Você terá aúxilio do início ao fim o melhor atendimento
+                com nossos Consultores Auxiliando em sua aquisição de credito.</p>
             </div>
       </section>
       <Footer />

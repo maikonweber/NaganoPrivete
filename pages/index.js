@@ -34,25 +34,35 @@ export default function Home() {
       <Header/>
       <div className={Style.boxCard} > 
           <Card openModal={handleModal}  img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
-          <Card openModal={handleModal} img="/chart.png" title="Credito Imobilário" text="Realizamos o seu sonho credito e soluções financeiras fornecidas pela caixa, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal} img="/chart.png" title="Home Equality" text="Realizamos o seu sonho com a solução financeiras Home Equality, adequadas aos objetivos e momento de vida." />
           <Card openModal={handleModal}img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal}img="/money.png" title="Credito para Veiculos" text="Credito para aquisição de carros, caminhões" />
       </div>
 
       <SectionText 
           title="Qual o nosso diferencal?"
-          text="Preencha o formulário abaixo e receba um orçamento para a criação de um site profissional! Nós da Consultoria Digital, somos uma empresa especializada em WordPress!"
-          image="/01-image.png"
+          text="A Nagano Consultoria oferece atendimento personalizado e humanizado, analisando todas possibilidade de credito e condições de aquisição de credito.
+          prestando um atendimento rápido e eficiente, sempre com foco na satisfação do cliente."
+          image="/05-image.jpg"
           order="normal"
       />
       <SectionText 
-        title="Qual o nosso diferencal?"
-        text="Preencha o formulário abaixo e receba um orçamento para a criação de um site profissional! Nós da Consultoria Digital, somos uma empresa especializada em WordPress!"
-        image="/01-image.png"
+        title="Bancos Parceiros"
+        text="Parceria com diversos bancos para atendimento rápido e 
+        eficiente, localizando taxas e condições melhores no mercado,
+        sempre com foco na satisfação do cliente."
+        
+        image="/03-image.jpg"
         order="reverse"
       />
-
-      <Team img="/people.png"/>
-  
+      <SectionText 
+        title="Atendimento presencial e virtual"
+        text="Atendimento presencial e virtual, conheça nossas instalações
+        nosso ambiente, visite e adquira aqui o seu sonhos, lhe trazendo maior segurança e tranquilidade."
+        image="/04-image.jpg"
+        order="normal"
+      />
+      <Team img="/people.png"/>  
       <Footer/>      
     </main>
   )
