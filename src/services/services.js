@@ -1,7 +1,7 @@
 
 export async function v1_teste(token) {
   console.log(token)
-    const response = await fetch(`http://143.198.180.153/api/v1/token`, {
+    const response = await fetch(`https://api.muttercorp.online/api/v1/token`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -12,7 +12,7 @@ export async function v1_teste(token) {
   }
   
   export async function loginIn(email, password) {
-    const response = await fetch(`https://143.198.180.153/api/v1/login`, {
+    const response = await fetch(`https://api.muttercorp.online/api/v1/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -25,7 +25,7 @@ export async function v1_teste(token) {
   }
   
   export async function getAllLeads(token) {
-    const response = await fetch(`https://143.198.180.153/api/v1/data/getAll`, {
+    const response = await fetch(`https://api.muttercorp.online/api/v1/data/getAll`, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json',
       'token': `${token}` },
@@ -37,7 +37,7 @@ export async function v1_teste(token) {
   
   export async function insertLead(data) {
     console.log(data)
-    const response = await fetch(`https://143.198.180.153/api/v1/sendLead`, {
+    const response = await fetch(`https://api.muttercorp.online/api/v1/sendLead`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body : JSON.stringify({
