@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Topbar from '../src/Components/Topbar'
 import Footer from '../src/Components/Footer'
 import Modal from '../src/Components/Modal'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import CardSlice from '../src/Components/cardSlice/cardSlice'
 import Style from "../styles/consignados.module.css"
 import { GetServerSideProps } from 'next'
@@ -14,7 +14,13 @@ import Table from '../src/Components/Table'
 
 export default function Home(datax) {
   const [modal, setModal] = useState(false)
-  console.log(datax)
+  
+  useEffect(() => {
+
+
+  }, [])
+
+
   const data = [
     {nome:"Jarvolino",sobrenome:"Maneiro",email:"email@gmail.com",telefone:"11997821547"},
     {nome:"Renata",sobrenome:"Almeida",email:"esse@gmail.com",telefone:"11997821547"},
@@ -65,27 +71,5 @@ export const getServerSideProps = async (ctx) => {
             permanent: false,
        }
       }
-      } else {
-        const data = await v1_teste(token)
-    
-        if (data.status === true) {
-          return {
-            props: {
-              token: data,
-            }
-          }
-        } else {
-          return {
-            redirect: {
-              destination: '/login',
-              permanent: false,
-            }
-          } 
-        }
-      }
-      return {
-        props: {
-          token
-        }
-      }
     }
+  }
