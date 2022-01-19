@@ -12,6 +12,8 @@ const Login = () => {
     const [show,setShow] = useState(false);
     const [email, setEmail] = useState('');    
 
+    const router = useRouter();
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (email != '' && password != '')  {
@@ -23,7 +25,7 @@ const Login = () => {
                    maxAge: 60 * 60 * 60 * 60,
                });
       
-               useRouter.push('/dashboard');
+               router.push('/dashboard');
       
             } else {
       
