@@ -3,7 +3,7 @@ import Style from "../styles/login.module.css";
 import {RiEyeCloseLine,RiEyeLine} from "react-icons/ri"
 import { loginIn } from '../src/services/services';
 import {setCookie} from 'nookies';
-import Router from 'next/router';
+import { useRouter } from 'next/router'
 import Head from 'next/head';
 // Sing in form with styled components
 
@@ -23,7 +23,7 @@ const Login = () => {
                    maxAge: 60 * 60 * 60 * 60,
                });
       
-               Router.push('/dashboard');
+               useRouter.push('/dashboard');
       
             } else {
       
