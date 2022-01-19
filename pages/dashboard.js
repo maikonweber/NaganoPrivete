@@ -71,7 +71,7 @@ export const getServerSideProps = async (ctx) => {
         if (data.status === true) {
           return {
             props: {
-              token: datax,
+              token: data,
             }
           }
         } else {
