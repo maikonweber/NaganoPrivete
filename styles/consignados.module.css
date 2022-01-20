@@ -4,8 +4,24 @@
     background-color: #1E5A7C;
     
     
-    
 }
+
+.loading {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 500%;
+    height: 500%;
+    z-index: 9999;
+    background-color: #1E5A7C;
+    border: 5px solid #fff;
+    border-top-color: #1E5A7C;
+    border-bottom-color: #1E5A7C;
+    border-left-color: #1E5A7C;
+    border-right-color: #1E5A7C;
+    animation: spin 1s linear infinite;
+}
+
 .container{
     display: flex;
     width:100%;

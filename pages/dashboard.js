@@ -14,10 +14,17 @@ import Table from '../src/Components/Table'
 
 export default function Home(datax) {
   const [modal, setModal] = useState(false)
+ 
   
   useEffect(() => {
-
-
+    const { 'nextauth.token': token } = parseCookies()
+    console.log(token)
+    if(!token){
+      Router.push('/')
+    } else {
+      const painel = document.querySelector('#loading')
+      painel.style.display = 'none'
+      }
   }, [])
 
 
@@ -43,7 +50,7 @@ export default function Home(datax) {
   return (
     <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={title}/>
+   
       <Head>
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Nagano Consultoria</title>
@@ -51,7 +58,7 @@ export default function Home(datax) {
         , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className={Style.loading} id='loading' />
       <Table data={datax}/>
 
       <Footer />
@@ -64,12 +71,9 @@ export const getServerSideProps = async (ctx) => {
       const { 'nextauth.token': token } = parseCookies(ctx)
       const datax = await getAllLeads(token)
       // get token of server
-      if (!token) {
-       return {
-         redirect: {
-            destination: '/login',
-            permanent: false,
-       }
+    return {
+      props: {
+        datax
       }
     }
   }

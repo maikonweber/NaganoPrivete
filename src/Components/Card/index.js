@@ -1,6 +1,10 @@
 import Link from "next/link"
 import Style from "./style.module.css"
-function Card({img,title,text, openModal}) {
+
+function Card({img,title,text, openModal, link}) {
+
+
+
     return (
         <div className={Style.container}>
             <strong className={Style.title}>{title}</strong>
@@ -10,7 +14,7 @@ function Card({img,title,text, openModal}) {
            <div className={Style.cont}>
                 <span className={Style.text}>{text}</span>
            </div>
-           <Link href="/"><button onClick={ () => openModal(title) } className={Style.button}>Simule</button></Link>
+           <Link href={link}><button className={Style.button}>Simule</button></Link>
         </div>
     )
 }

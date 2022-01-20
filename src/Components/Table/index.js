@@ -18,7 +18,7 @@ function Table({data}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.token.map(data=>{
+                    {data.datax.map(data =>{
                         return(
                             <tr>
                                 <td>{data.first_name}</td>

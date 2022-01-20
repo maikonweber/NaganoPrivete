@@ -8,15 +8,12 @@ import Footer from '../src/Components/Footer'
 import Team from '../src/Components/Team'
 import Modal from '../src/Components/Modal'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
+
 
 export default function Home() {
   const [modal, setModal] = useState(false)	
   const [title, setTitle] = useState('')
- 
-  function handleModal(title){ 
-    setModal(!modal)
-    setTitle(title)
-  }
 
   return (
 
@@ -33,10 +30,10 @@ export default function Home() {
       <Topbar/>
       <Header/>
       <div className={Style.boxCard} > 
-          <Card openModal={handleModal} link="/consignados" img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
-          <Card openModal={handleModal} link="/equality" img="/chart.png" title="Home Equality" text="Realizamos o seu sonho com a solução financeiras Home Equality, adequadas aos objetivos e momento de vida." />
-          <Card openModal={handleModal} link="/fgts" img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
-          <Card openModal={handleModal} link="/detran" img="/money.png" title="Credito para Veiculos" text="Credito para aquisição de carros, caminhões" />
+          <Card link="/consignados" img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
+          <Card link="/equality" img="/chart.png" title="Home Equality" text="Realizamos o seu sonho com a solução financeiras Home Equality, adequadas aos objetivos e momento de vida." />
+          <Card link="/fgts" img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
+          <Card link="/detran" img="/car.png" title="Credito para Veiculos" text="Credito para aquisição de carros, caminhões, credito para pagamento de IPVA e Documentação do veiculos" />
       </div>
 
       <SectionText 
