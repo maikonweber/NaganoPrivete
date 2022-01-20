@@ -62,7 +62,7 @@ export default function Home() {
         image="/04-image.jpg"
         order="normal"
       />
-      <Team img="/people.png"/>  
+      {/* <Team img="/people.png"/>   */}
       <Footer/>      
     </main>
   )
