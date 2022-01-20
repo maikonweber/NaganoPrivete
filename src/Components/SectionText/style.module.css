@@ -73,10 +73,12 @@
         border-radius: 40px;
         z-index: 2;
         background: var(--secondary-color);
-        width: 80%;
+        width: 100%;
         
 }
-
+.contImage img{
+        max-width: 600px;
+}
 .contImage::before{
         content: "";
         height: 100%;

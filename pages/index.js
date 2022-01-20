@@ -33,10 +33,10 @@ export default function Home() {
       <Topbar/>
       <Header/>
       <div className={Style.boxCard} > 
-          <Card openModal={handleModal}  img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
-          <Card openModal={handleModal} img="/chart.png" title="Home Equality" text="Realizamos o seu sonho com a solução financeiras Home Equality, adequadas aos objetivos e momento de vida." />
-          <Card openModal={handleModal}img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
-          <Card openModal={handleModal}img="/money.png" title="Credito para Veiculos" text="Credito para aquisição de carros, caminhões" />
+          <Card openModal={handleModal} link="/consignados" img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos e momento de vida."/>
+          <Card openModal={handleModal} link="/equality" img="/chart.png" title="Home Equality" text="Realizamos o seu sonho com a solução financeiras Home Equality, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal} link="/fgts" img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
+          <Card openModal={handleModal} link="/detran" img="/money.png" title="Credito para Veiculos" text="Credito para aquisição de carros, caminhões" />
       </div>
 
       <SectionText 
@@ -62,7 +62,7 @@ export default function Home() {
         image="/04-image.jpg"
         order="normal"
       />
-      <Team img="/people.png"/>  
+      {/* <Team img="/people.png"/>   */}
       <Footer/>      
     </main>
   )
