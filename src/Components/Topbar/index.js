@@ -7,7 +7,6 @@ function Topbar({ image }) {
 
     function toggleMobile(){
         let mobile = document.querySelector("#mobile")
-
         mobile.classList.toggle(Style.active)
     }
     return (
