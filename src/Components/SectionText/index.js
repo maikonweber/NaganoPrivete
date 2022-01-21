@@ -1,8 +1,8 @@
 import Link from "next/link"
 import Style from "./style.module.css"
-function SectionText({title,text,image,order}) {
+function SectionText({id,title,text,image,order}) {
     return (
-        <div className={Style.container}>
+        <div id={id && id} className={Style.container}>
            <div className={`${Style.cont} ${order !== "normal" && Style.active}`}>
                <div className={`${Style.left}  ${order == "normal" && Style.active}`} >
                     <h2 className={Style.title}>{title}</h2>

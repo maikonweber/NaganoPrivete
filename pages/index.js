@@ -37,6 +37,7 @@ export default function Home() {
       </div>
 
       <SectionText 
+          id="about"
           title="Qual o nosso diferencal?"
           text="A Nagano Consultoria oferece atendimento personalizado e humanizado, analisando todas possibilidade de credito e condições de aquisição de credito.
           prestando um atendimento rápido e eficiente, sempre com foco na satisfação do cliente."
@@ -60,7 +61,7 @@ export default function Home() {
         order="normal"
       />
       {/* <Team img="/people.png"/>   */}
-      <Footer/>      
+      <Footer id="contact"/>      
     </main>
   )
 }

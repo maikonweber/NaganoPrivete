@@ -18,9 +18,8 @@ function Topbar({ image }) {
                     <div className={Style.cont}>
                         <div className={Style.contLink} >
                             <Link href="/"><span className={Style.text}>Home</span></Link>
-                            <Link href="/"><span className={Style.text}>About us</span></Link>
-                            <Link href="/"><span className={Style.text}>Contact</span></Link>
-                            <button className={Style.button}>Simule</button>
+                            <Link href="#about"><span className={Style.text}>About us</span></Link>
+                            <Link href="#contact"><span className={Style.text}>Contact</span></Link>
                         </div>
                     </div>
 
@@ -31,9 +30,8 @@ function Topbar({ image }) {
             <div  className={Style.navMobile}>
                     <div id="mobile" className={Style.contLinkMobile} >
                         <Link href="/"><span className={Style.text}>Home</span></Link>
-                        <Link href="/"><span className={Style.text}>About us</span></Link>
-                        <Link href="/"><span className={Style.text}>Contact</span></Link>
-                        <button className={Style.button}>Simule</button>
+                        <Link href="#about"><span className={Style.text}>About us</span></Link>
+                        <Link href="#contact"><span className={Style.text}>Contact</span></Link>
                     </div>
                 </div>
         </>

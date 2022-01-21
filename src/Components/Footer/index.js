@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Style from "./style.module.css"
 
-function Footer({ img, title, text }) {
+function Footer({ id,img, title, text }) {
     return (
-        <div className={Style.container}>
+        <div id={id && id} className={Style.container}>
             <div className={Style.cont}>
                 <div className={Style.left}>
                     <img className={Style.logo} src="/logo.svg" />
