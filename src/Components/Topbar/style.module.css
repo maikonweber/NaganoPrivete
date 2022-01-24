@@ -21,7 +21,7 @@
         display: none;
 }
 .navMobile{
-        height: 100%;
+        height: auto;
         width: 100px;
         flex: 1;
         display: flex;
@@ -88,7 +88,7 @@
         .navMobile{
                 display: flex;
                 position: fixed;
-                height: 100vh;
+                height: auto;
                 width: 100vw;
                 z-index: 999;
                 padding: 0;
