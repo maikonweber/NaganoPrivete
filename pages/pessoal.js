@@ -25,8 +25,8 @@ export default function Home() {
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
-        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
-        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <meta name="description" content="Esse crédito não está relacionado a finalidades específicas. Na verdade, ele é utilizado justamente para uso pessoal, sendo liberado pelas financeiras com juros que dependem de cada condição
+                podendo ser debitado direto em conta pessoal, boleto ou conta de consumo de energia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -34,7 +34,7 @@ export default function Home() {
         <div className={Style.container}>
           <div className={Style.left}>
             <h1> O crédito pessoal empréstimo destinada para Pessoa Física </h1>
-            <span>Assim, esse crédito não está relacionado a finalidades específicas. Na verdade, ele é utilizado justamente para uso pessoal, sendo liberado pelas financeiras com juros que dependem de cada condição
+            <span>Esse crédito não está relacionado a finalidades específicas. Na verdade, ele é utilizado justamente para uso pessoal, sendo liberado pelas financeiras com juros que dependem de cada condição
                 podendo ser debitado direto em conta pessoal, boleto ou conta de consumo de energia</span>
           </div>
           <div className={Style.right}>

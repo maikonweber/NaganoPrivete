@@ -26,7 +26,8 @@ export default function Home() {
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
         <meta name="description" content="Crédito Consignado
-Disponível para você usar quando e como quiser. Aproveite para realizar seus planos: reforma da casa, viagem dos sonhos, organizar sua vida financeira" />
+        Disponível para você usar quando e como quiser. Aproveite para realizar seus planos: reforma da casa, viagem dos sonhos, organizar sua vida financeira,
+        sempre garantindo para você os melhores valores taxas e valores liberados" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

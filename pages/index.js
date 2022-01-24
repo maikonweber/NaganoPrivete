@@ -48,8 +48,8 @@ export default function Home() {
       />
       <SectionText 
         title="Bancos Parceiros"
-        text="Parceria com diversos bancos para atendimento rápido e 
-        eficiente, localizando taxas e condições melhores no mercado,
+        text="Parceria com diversos bancos para que encaixe melhor condições de financiamento
+        do cliente, localizando taxas e condições melhores no mercado,
         sempre com foco na satisfação do cliente."
         
         image="/03-image.jpg"

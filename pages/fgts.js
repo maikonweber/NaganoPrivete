@@ -25,8 +25,8 @@ export default function Home() {
       <Head>
         <title>Credito Consignados</title>
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
-        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <meta name="description" content=">O empréstimo com uso do Fundo de Garantia do Tempo de Serviço do trabalhador (FGTS) surgiu como alternativa para quem precisa de crédito com juros baixos e 
+              nem sempre consegue colocar algum bem, como uma casa ou carro, como garantia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

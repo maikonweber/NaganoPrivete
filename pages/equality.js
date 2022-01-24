@@ -25,8 +25,7 @@ export default function Home() {
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
-        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
-        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
+        <meta name="description" content="O Empréstimo com Garantia de Imóvel, também conhecido como Home Equity, funciona assim: você pode pedir um empréstimo a partir de R$ 30 mil e coloca seu imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -46,7 +45,7 @@ export default function Home() {
         <div className={Style.container}>
           <div className={Style.top}>
             <h1>Como é o Empréstimo com Garantia de Imóvel?</h1>
-            <p>O Empréstimo com Garantia de Imóvel do Inter, também conhecido como Home Equity, funciona assim: você pode pedir um empréstimo a partir de R$ 30 mil e coloca seu imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
+            <p>O Empréstimo com Garantia de Imóvel, também conhecido como Home Equity, funciona assim: você pode pedir um empréstimo a partir de R$ 30 mil e coloca seu imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
              <p>As taxas e prazos dessa modalidade de empréstimo são as melhores do mercado. Além disso, você pode pedir seu empréstimo de até 50% do valor do seu imóvel sem precisar vender ou sair dele.</p>
           </div>
           <div className={Style.bottom}>
