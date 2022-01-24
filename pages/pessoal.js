@@ -25,16 +25,17 @@ export default function Home() {
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
-        <meta name="description" content="Cred IPVA é uma linha especial de financiamento para pessoa física
-        ,direcionado ao pagamento de encargos como IPVA (atrasado ou não), DPVAT (seguro obrigatório), multas de trânsito e taxa de licenciamento. O empréstimo está disponível somente para o pagamento de taxas de carrosa" />
+        <meta name="description" content="Nagano Consultoria é um site especializado em credito consignado, empréstimos imobilário, emprestimos com fgts
+        , consultamos qualquer tipo de credito para que você solucione a sua vida financeira de maneira prática" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={Style.header}>
         <div className={Style.container}>
           <div className={Style.left}>
-            <h1>Faça a gora mesmo a simulação do seu Cred IPVA</h1>
-            <span>O Cred IPVA é uma linha especial de financiamento para correntistas, pessoas físicas, direcionado ao pagamento de encargos como IPVA (atrasado ou não), DPVAT (seguro obrigatório), multas de trânsito e taxa de licenciamento. O empréstimo está disponível somente para o pagamento de taxas de carros.</span>
+            <h1> O crédito pessoal empréstimo destinada para Pessoa Física </h1>
+            <span>Assim, esse crédito não está relacionado a finalidades específicas. Na verdade, ele é utilizado justamente para uso pessoal, sendo liberado pelas financeiras com juros que dependem de cada condição
+                podendo ser debitado direto em conta pessoal, boleto ou conta de consumo de energia</span>
           </div>
           <div className={Style.right}>
             <CardSlice openModal={handleModal} ></CardSlice>
@@ -45,8 +46,11 @@ export default function Home() {
       <section className={Style.sectionCards}>
         <div className={Style.container}>
           <div className={Style.top}>
-            <h1>Como funciona o processo de emprestimo</h1>
-            <p> A liberação do empréstimo é ágil e sem burocracia. O cliente tem duas opções de prazo e taxas. De 2 a 12 meses, a taxa de juros é de 4,10% ao mês, e de 13 a 24 meses, 4,80% ao mês. O pagamento é feito por meio de débito direto em conta-corrente..</p>
+            <h1>Empréstimo pessoal</h1>
+            <p>Essa é uma das modalidades de crédito mais conhecidas. uma das suas principais características é que ela não necessita de comprovação sobre o destino do dinheiro. Para a aprovação, geralmente, é realizada uma análise dos documentos e do histórico de pagamento do consumidor..</p>
+             <p>Na categoria de crédito pessoal, a instituição financeira empresta um valor para o trabalhador, desde que ele tenha renda. O valor é liberado para pessoas físicas.
+             As condições variam em cada instituição financeira, podendo ter parcelamentos diferenciados. O que importa é você entender o que melhor se encaixa no seu bolso. Não é preciso ter fiador e a liberação do dinheiro é rápida: tudo com o objetivo de descomplicar o empréstimo.
+            </p>
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
@@ -56,15 +60,15 @@ export default function Home() {
             </div>
 
             <div className={Style.card}>
-                <strong> Home Equality </strong>
-              <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
-              <Link href='/equality'><strong>Simule</strong></Link>
+              <strong>Emprestimo Cred IPVA </strong>
+              <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
+              <Link href='/detran'><strong>Simule</strong></Link>
             </div>
 
             <div className={Style.card}>
-            <strong>Credito Pessoal</strong>
-              <p>ma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
-              <Link href='/pessoal'><strong>Simule</strong></Link>
+            <strong> Home Equality </strong>
+              <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso</p>
+              <Link href='/equality'><strong>Simule</strong></Link>
             </div>
           </div>
         </div>
@@ -75,7 +79,7 @@ export default function Home() {
               <img src="/pc.jpg" alt="image"/>
             </div>
             <div className={Style.rightCont}>
-              <h1>Atendimento Personalizado.</h1>
+            <h1>Atendimento Personalizado.</h1>
               <p>Na Nagano Consultoria temos um atendimento personalizado e humanizado, entremos em contato sempre com nosso clientes,
                 verificando todas as possibilidade de emprestimos. Você terá aúxilio do início ao fim o melhor atendimento
                 com nossos Consultores Auxiliando em sua aquisição de credito.</p>

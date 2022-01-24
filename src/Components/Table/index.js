@@ -18,7 +18,7 @@ function Table({data}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.datax.map(data =>{
+                    {data.map(data =>{
                         return(
                             <tr>
                                 <td>{data.first_name}</td>

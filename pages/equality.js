@@ -5,6 +5,7 @@ import Modal from '../src/Components/Modal'
 import { useState } from 'react'
 import CardSlice from '../src/Components/cardSlice/cardSlice'
 import Style from "../styles/consignados.module.css"
+import Link from "next/link"
 
 export default function Home() {
   const [modal, setModal] = useState(false)
@@ -50,21 +51,21 @@ export default function Home() {
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
-            <strong>Emprestimo Garantia FGTS</strong>
-              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário</p>
-              <strong>Simule</strong>
+              <strong>Emprestimo Cred IPVA </strong>
+              <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
+              <Link href='/detran'><strong>Simule</strong></Link>
             </div>
 
             <div className={Style.card}>
-              <strong>Emprestimo Cred IPVA </strong>
-              <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
-              <strong>Simule</strong>
+            <strong>Emprestimo Garantia FGTS</strong>
+              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário</p>
+              <Link href='/fgts'><strong>Simule</strong></Link>
             </div>
 
             <div className={Style.card}>
             <strong>Credito Pessoal</strong>
-              <p>uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
-              <strong>Simule</strong>
+              <p>ma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
+              <Link href='/pessoal'><strong>Simule</strong></Link>
             </div>
           </div>
         </div>

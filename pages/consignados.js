@@ -5,6 +5,7 @@ import Modal from '../src/Components/Modal'
 import { useState } from 'react'
 import CardSlice from '../src/Components/cardSlice/cardSlice'
 import Style from "../styles/consignados.module.css"
+import Link from "next/link"
 
 export default function Home() {
   const [modal, setModal] = useState(false)
@@ -51,21 +52,21 @@ Disponível para você usar quando e como quiser. Aproveite para realizar seus p
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
-              <strong>Emprestimo Garantia FGTS</strong>
-              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário.</p>
-              <strong>Simule</strong>
+              <strong>Emprestimo Cred IPVA </strong>
+              <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
+              <Link href='/detran'><strong>Simule</strong></Link>
             </div>
 
             <div className={Style.card}>
-              <strong>Home Equality</strong>
+            <strong> Home Equality </strong>
               <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
-              <strong>Simule</strong>
+              <Link href='/equality'><strong>Simule</strong></Link>
             </div>
 
             <div className={Style.card}>
-              <strong>Credito Pessoal </strong>
-              <p> uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso.</p>
-              <strong>Simule</strong>
+            <strong>Emprestimo Garantia FGTS</strong>
+              <p>Faça agora simulação com as Você pode antecipar os próximos 7 anos do seu saque-aniversário</p>
+              <Link href='/fgts'><strong>Simule</strong></Link>
             </div>
           </div>
         </div>

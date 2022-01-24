@@ -12,19 +12,23 @@ import  {v1_teste, getAllLeads} from '../src/services/services'
 import Table from '../src/Components/Table'
 
 
-export default function Home(datax) {
+
+export default function Home() {
   const [modal, setModal] = useState(false)
  
   
   useEffect(() => {
     const { 'nextauth.token': token } = parseCookies()
     console.log(token)
+
+
+
     if(!token){
       Router.push('/')
     } else {
       const painel = document.querySelector('#loading')
       painel.style.display = 'none'
-      }
+    }
   }, [])
 
 
@@ -59,7 +63,7 @@ export default function Home(datax) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={Style.loading} id='loading' />
-      <Table data={datax}/>
+      <Table data={data}/>
 
       <Footer />
       </>
@@ -69,6 +73,7 @@ export default function Home(datax) {
 export const getServerSideProps = async (ctx) => {
       // get token of browser
       const { 'nextauth.token': token } = parseCookies(ctx)
+      console.log(token)
       const datax = await getAllLeads(token)
       // get token of server
     return {
