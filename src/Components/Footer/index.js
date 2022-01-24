@@ -10,29 +10,47 @@ function Footer({ id,img, title, text }) {
                     <ul className={Style.list}>
                         <li className={Style.itemList}>
                             <Link href="/">
+                            <a className={Style.itemListLink} target="_blank" href="https://instagram.com/naganoconsultoria?utm_medium=copy_link">
                                 <>
                                     <img src="/um.svg" />
-                                    @naganocnsultoria02
+                                    @naganoconsultoria
+                                </>
+                            </a>
+                            </Link>
+                        </li>
+                        <li className={Style.itemList}>
+                            <Link href="/">
+                                <>
+                                    <img src="/dois.svg" />
+                                    (11) 2639-0006
                                 </>
                             </Link>
                         </li>
                         <li className={Style.itemList}>
+                            <Link href="/">
+                                <>
+                                    <img src="/cinco.svg" />
+                                    atendimento@naganoconsultoria.com.br
+                                </>
+                            </Link>
+                        </li>
+                        {/* <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/tres.svg" />
                                     @naganocnsultoria02
                                 </>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
-                <div  className={Style.midlle}>
+                {/* <div  className={Style.midlle}>
                     <ul className={Style.list}>
                         <li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/dois.svg" />
-                                    @naganocnsultoria02
+                                    (11) 2639-0006
                                 </>
                             </Link>
                         </li>
@@ -48,13 +66,13 @@ function Footer({ id,img, title, text }) {
                             <Link href="/">
                                 <>
                                     <img src="/cinco.svg" />
-                                    @naganocnsultoria02
+                                    atendimento@naganoconsultoria.com.br
                                 </>
                             </Link>
                         </li>
                     </ul>
-                </div >
-                <div className={Style.right}>
+                </div > */}
+                {/* <div className={Style.right}>
                     <ul className={Style.list}>
                         <li className={Style.itemList}>
                             <Link href="/">
@@ -73,7 +91,7 @@ function Footer({ id,img, title, text }) {
                             </Link>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
             <button className={Style.button}>©2021 por Nagano Soluções Financeiras</button>
         </div>
