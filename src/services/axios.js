@@ -1,26 +1,18 @@
 import axios from 'axios';
+import { parseCookies } from 'nookies';
 
-export function getApiClient(ctx) {
-    const { 'nextauth.token': token } = parseCookies();
+export async function getApiClient(ctx) {
+    const { 'nextauth.token': token } = parseCookies(ctx);
+    console.log(ctx)
 
     const api =  axios.create({
-        baseURL: `${process.env.NEXT_PUBLIC_API_URL}token`,
-})
-
-api.interceptors.request.use(config => {
-    console.log(config)
-
-    return config;
-})
-
-if (token) {
-    // inser body in request
-    api.body = {
-        token: token
-    }
-
-}
-
-return api
-
+        baseURL: `${process.env.NEXT_PUBLIC_API_URL}`,
+        headers: {
+            'Content-Type': 'application/json',
+            'token': `${ctx}`
+        }
+    });
+    const result = await api.get('/data/getAll')
+    return result.data
+   
 }

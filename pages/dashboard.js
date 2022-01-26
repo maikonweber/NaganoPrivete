@@ -10,16 +10,18 @@ import { parseCookies } from 'nookies'
 import Router from 'next/router'
 import  {v1_teste, getAllLeads} from '../src/services/services'
 import Table from '../src/Components/Table'
+import { getApiClient } from '../src/services/axios'
 
 
 
-export default function Home() {
+export default function Home(props) {
   const [modal, setModal] = useState(false)
- 
+  const data = props.datax
+
   
   useEffect(() => {
     const { 'nextauth.token': token } = parseCookies()
-    console.log(token)
+  
 
 
 
@@ -32,7 +34,7 @@ export default function Home() {
   }, [])
 
 
-  const data = [
+  const data1 = [
     {nome:"Jarvolino",sobrenome:"Maneiro",email:"email@gmail.com",telefone:"11997821547"},
     {nome:"Renata",sobrenome:"Almeida",email:"esse@gmail.com",telefone:"11997821547"},
     {nome:"Fabiana",sobrenome:"Souza",email:"email@gmail.com",telefone:"11997821547"},
@@ -72,9 +74,10 @@ export default function Home() {
 
 export const getServerSideProps = async (ctx) => {
       // get token of browser
+      console.log(ctx)
       const { 'nextauth.token': token } = parseCookies(ctx)
-      console.log(token)
-      const datax = await getAllLeads(token)
+      const datax = await getApiClient(token)
+      
       // get token of server
     return {
       props: {
