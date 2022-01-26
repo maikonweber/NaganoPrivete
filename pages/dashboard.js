@@ -56,16 +56,16 @@ export default function Home(props) {
   ) 
 }
 
-export const getServerSideProps = async (ctx) => {
-      // get token of browser
-      console.log(ctx)
-      const { 'nextauth.token': token } = parseCookies(ctx)
-      const datax = await getApiClient(token)
+// export const getServerSideProps = async (ctx) => {
+//       // get token of browser
+//       console.log(ctx)
+//       const { 'nextauth.token': token } = parseCookies(ctx)
+//       const datax = await getApiClient(token)
       
-      // get token of server
-    return {
-      props: {
-        datax
-      }
-    }
-  }
+//       // get token of server
+//     return {
+//       props: {
+//         datax
+//       }
+//     }
+//   }
