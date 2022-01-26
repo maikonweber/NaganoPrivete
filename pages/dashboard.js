@@ -16,10 +16,8 @@ import { getApiClient } from '../src/services/axios'
 
 export default function Home(props) {
   const [modal, setModal] = useState(false)
-  const data = props.datax
-
-  
-  useEffect(() => {
+  const [data, setData] = useState([])
+  useEffect( async () => {
     const { 'nextauth.token': token } = parseCookies()
   
 
@@ -30,29 +28,14 @@ export default function Home(props) {
     } else {
       const painel = document.querySelector('#loading')
       painel.style.display = 'none'
+      var returns = await getAllLeads(token)
+      setData(returns)
+    
+  
     }
-  }, [])
+  }, [data])
 
-
-  const data1 = [
-    {nome:"Jarvolino",sobrenome:"Maneiro",email:"email@gmail.com",telefone:"11997821547"},
-    {nome:"Renata",sobrenome:"Almeida",email:"esse@gmail.com",telefone:"11997821547"},
-    {nome:"Fabiana",sobrenome:"Souza",email:"email@gmail.com",telefone:"11997821547"},
-    {nome:"Alessandra",sobrenome:"Ribeiro",email:"email@outlook.com",telefone:"11997821547"},
-    {nome:"Mariana",sobrenome:"Martins",email:"email@live.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-    {nome:"Vitoria",sobrenome:"Monteiro",email:"email@hotmail.com",telefone:"11997821547"},
-  ]
-  // Create table
-
+   
   return (
     <>
       <Topbar />
@@ -65,7 +48,8 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={Style.loading} id='loading' />
-      <Table data={data}/>
+      
+      <Table data={data ? data : data}/>
 
       <Footer />
       </>

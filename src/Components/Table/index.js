@@ -3,6 +3,7 @@ import { database } from "pg/lib/defaults"
 import Style from "./style.module.css"
 
 function Table({data}) {
+    console.log(data)
     return (
         <div className={Style.container}>
             <div className={Style.cont}>
@@ -18,7 +19,8 @@ function Table({data}) {
                     </tr>
                 </thead>
                 <tbody>
-                    {data.map(data =>{
+                    
+                    { data.map(data =>{
                         return(
                             <tr>
                                 <td>{data.first_name}</td>
