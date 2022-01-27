@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { database } from "pg/lib/defaults"
 import Style from "./style.module.css"
+import moment from "moment"
 
 function Table({data}) {
     console.log(data)
@@ -33,7 +34,7 @@ function Table({data}) {
 
                                 <td>{data.message}</td>
                                 
-                                <td>{new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' }).format(data.create)}</td>
+                                <td>{moment(data.created).format('DD/MM/YYYY')}</td>
                             </tr>
                         )
                     })}
