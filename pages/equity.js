@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`HomeEquality : ${msg}`} />
+      <Modal open={modal} isOpen={setModal} title={'Home Equity'} message={`HomeEquity : ${msg}`} />
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>

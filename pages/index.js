@@ -32,7 +32,7 @@ export default function Home() {
       <Header/>
       <div className={Style.boxCard} > 
           <Card link="/consignados" img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos"/>
-          <Card link="/equality" img="/chart.png" title="Home Equality" text="Realizamos o seu sonho com a solução financeiras Home Equality, adequadas aos objetivos e momento de vida." />
+          <Card link="/equity" img="/chart.png" title="Home Equity" text="Realizamos o seu sonho com a solução financeiras Home Equity, adequadas aos objetivos e momento de vida." />
           <Card link="/fgts" img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
           <Card link="/detran" img="/car.png" title="Credito para Veiculos" text="Credito para aquisição de carros, caminhões, credito para pagamento de IPVA e Documentação" />
           <Card link="/pessoal" img="/cash.png" title="Credito Pessoal" text="Credito Pessoal vinculado a conta corrente, boleto ou pela fatura de conta de consumo"/>

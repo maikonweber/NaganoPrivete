@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`HomeEquality : ${msg}`} />
+      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`Consignados : ${msg}`} />
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
@@ -59,9 +59,9 @@ export default function Home() {
             </div>
 
             <div className={Style.card}>
-            <strong> Home Equality </strong>
+            <strong> Home Equity </strong>
               <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
-              <Link href='/equality'><strong>Simule</strong></Link>
+              <Link href='/equity'><strong>Simule</strong></Link>
             </div>
 
             <div className={Style.card}>
