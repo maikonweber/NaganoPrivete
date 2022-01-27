@@ -4,7 +4,7 @@ import Style from "./style.module.css"
 import moment from "moment"
 
 function Table({data}) {
-    console.log(data)
+  
     return (
         <div className={Style.container}>
             <div className={Style.cont}>

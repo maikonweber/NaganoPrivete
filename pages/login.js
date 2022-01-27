@@ -17,10 +17,10 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (email != '' && password != '')  {
-           console.log(email,password)    
+    
            const token = await loginIn(email,password)          
            if (token) {
-               console.log(token)
+          
                setCookie(undefined, 'nextauth.token', token[0].token, {
                    maxAge: 60 * 60 * 60 * 60,
                });

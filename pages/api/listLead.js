@@ -4,7 +4,7 @@
 // export default async function listList(req, res) {
 //     if (req.method === 'GET') {
 //         const retun = await getAll();
-//         console.log(retun);
+//     
 //         res.json(retun);
 //     }
 // }

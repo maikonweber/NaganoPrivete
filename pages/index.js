@@ -10,6 +10,7 @@ import Modal from '../src/Components/Modal'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from "next/link"
+import Popup from "../src/Components/popup_"
 
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       </Head>
 
       <Topbar/>
+      <Popup/>
       <Header/>
       <div className={Style.boxCard} > 
           <Card link="/consignados" img="/financa.png" title="Credito Consignado" text="Estudamos e pesquisamos as melhores opções de credito consigando, adequadas aos objetivos"/>

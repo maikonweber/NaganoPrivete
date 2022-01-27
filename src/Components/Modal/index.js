@@ -5,7 +5,7 @@ import { useState } from "react";
 import  { insertLead }  from "../../services/services";
 
 function Modal({open, isOpen,title, message}) {
-    console.log(message)
+ 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -40,9 +40,9 @@ function Modal({open, isOpen,title, message}) {
                  phone : phone,
                  message : message
              }
-             console.log(data)
+          
              const response = await insertLead(data)
-             console.log(response)
+          
          } else {
             alert('Email já Cadastrado')
          }
