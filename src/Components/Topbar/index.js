@@ -13,7 +13,7 @@ function Topbar({ image }) {
         <>
             <div className={Style.container} id="navbar">
                 <nav className={Style.nav}>
-                    <Link href="/"><img src="/logo.svg" alt="Logo Nagano consultoria." /></Link>
+                    <Link href="/"><img src="/logo.png" alt="Logo Nagano consultoria." /></Link>
                     <div className={Style.cont}>
                         <div className={Style.contLink} >
                             <Link href="/"><span className={Style.text}>Home</span></Link>

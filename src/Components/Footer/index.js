@@ -6,7 +6,7 @@ function Footer({ id,img, title, text }) {
         <div id={id && id} className={Style.container}>
             <div className={Style.cont}>
                 <div className={Style.left}>
-                    <img className={Style.logo} src="/logo.svg" />
+                    <img className={Style.logo} src="/logo.png" />
                     <ul className={Style.list}>
                         <li className={Style.itemList}>
                             <Link href="/">
