@@ -31,3 +31,9 @@
 
 /* On midia mobile */
 
+@media only screen and (max-width: 600px) {
+    .container {
+       height: 8%;
+    }
+  }
+
