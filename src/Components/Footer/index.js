@@ -23,6 +23,7 @@ function Footer({ id,img, title, text }) {
                                 <>
                                     <img src="/dois.svg" />
                                     (11) 2639-0006
+                                    0800-035-3737
                                 </>
                             </Link>
                         </li>
