@@ -17,8 +17,8 @@ function Topbar({ image }) {
                     <div className={Style.cont}>
                         <div className={Style.contLink} >
                             <Link href="/"><span className={Style.text}>Home</span></Link>
-                            <Link href="/#about"><span className={Style.text}>About us</span></Link>
-                            <Link href="/#contact"><span className={Style.text}>Contact</span></Link>
+                            <Link href="/#about"><span className={Style.text}>Sobre Nós</span></Link>
+                            <Link href="/#contact"><span className={Style.text}>Contatos</span></Link>
                         </div>
                     </div>
 
@@ -35,12 +35,12 @@ function Topbar({ image }) {
                             toggleMobile()
                         }}><Link href="/#about" onClick={()=>{
                             toggleMobile()
-                        }}><span className={Style.text}>About us</span></Link></div>
+                        }}><span className={Style.text}>Sobre Nós/span></Link></div>
                         <div className={Style.divContLink} onClick={()=>{
                             toggleMobile()
                         }}><Link href="/#contact" onClick={()=>{
                             toggleMobile()
-                        }}><span className={Style.text}>Contact</span></Link></div>
+                        }}><span className={Style.text}>Contatos</span></Link></div>
                     </div>
                 </div>
         </>

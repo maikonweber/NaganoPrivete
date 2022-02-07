@@ -34,9 +34,9 @@ export default function Home() {
       <div className={Style.header}>
         <div className={Style.container}>
           <div className={Style.left}>
-            <h1>Faça a gora mesmo a simulação do seu emprestimo consignado</h1>
-            <span>Analisamos as todas possibilidades de credito consignado, verificamos em todos os bancos parceiros
-              oferecemos atendimento especializado com consultores a pronta disposição para ajudar na melhor opção de credito.</span>
+            <h1>Faça agora mesmo a simulação do seu empréstimo consignado</h1>
+            <span>Analisamos as todas possibilidades de crédito consignado, verificamos em todos os bancos parceiros
+              oferecemos atendimento especializado com consultores a pronta disposição para ajudar na melhor opção de crédito.</span>
           </div>
           <div className={Style.right}>
             <CardSlice openModal={handleModal} ></CardSlice>
@@ -47,9 +47,9 @@ export default function Home() {
       <section className={Style.sectionCards}>
         <div className={Style.container}>
           <div className={Style.top}>
-            <h1>Como funciona o processo de emprestimo</h1>
+            <h1>Como funciona o processo de empréstimo</h1>
             <p>O significado de consignado está atrelado à particularidade desse crédito. Ele é descontado diretamente no contracheque, holerite ou benefício do INSS. Ele é mais comum para funcionários públicos, aposentados e pensionistas. Esqueça a burocracia. Com a gente, você não precisa de avalista e seu crédito fica disponível rapidinho.</p>
-            <p>Verificamos em todos os bancos parceiros as possibilidades de emprestimos consignados, sempre garantindo para você os melhores valores taxas e valores liberados.</p>
+            <p>Verificamos em todos os bancos parceiros as possibilidades de empréstimos consignados, sempre garantindo para você os melhores valores taxas e valores liberados.</p>
           </div>
           <div className={Style.bottom}>
             <div className={Style.card}>
@@ -80,8 +80,8 @@ export default function Home() {
             <div className={Style.rightCont}>
               <h1>Atendimento Personalizado</h1>
               <p> Nós da Nagano Consultoria temos um atendimento personalizado e humanizado, entremos em contato sempre com nosso clientes,
-                verificando todas as possibilidade de emprestimos. Você terá aúxilio do início ao fim o melhor atendimento
-                com nossos Consultores Auxiliando em sua aquisição de credito.</p>
+                verificando todas as possibilidade de empréstimos. Você terá aúxilio do início ao fim o melhor atendimento
+                com nossos Consultores Auxiliando em sua aquisição de crédito.</p>
             </div>
       </section>
       <Footer />
