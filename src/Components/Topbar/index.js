@@ -3,6 +3,7 @@ import Link from "next/link"
 import Style from "./style.module.css"
 import { FaBars } from "react-icons/fa"
 import { IoClose } from "react-icons/io5"
+
 function Topbar({ image }) {
 
     function toggleMobile(){
@@ -35,7 +36,7 @@ function Topbar({ image }) {
                             toggleMobile()
                         }}><Link href="/#about" onClick={()=>{
                             toggleMobile()
-                        }}><span className={Style.text}>Sobre Nós/span></Link></div>
+                        }}><span className={Style.text}>Sobre Nós</span></Link></div>
                         <div className={Style.divContLink} onClick={()=>{
                             toggleMobile()
                         }}><Link href="/#contact" onClick={()=>{
