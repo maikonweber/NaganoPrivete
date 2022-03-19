@@ -2,11 +2,16 @@
 import Link from "next/link";
 import Styles from "./model.module.css";
 import { useState } from "react"
+import Router from "next/router";
 
 
 function ModalPromotion({open, isOpen,title, message, img}) {
     function closeModal() {
         isOpen(false)
+    }
+
+    function useRouteToConsignados () {
+        Router.push("/consignados")
     }
 
 
@@ -15,25 +20,27 @@ function ModalPromotion({open, isOpen,title, message, img}) {
         {open ?
         <div className={Styles.modal}>
             <div className={Styles.modal__content}>
-                <h1>{title}</h1>
                 <div className={Styles.modal__content__title}>
-                <img className={Styles.img} src={img}/>
-            
+                <h1>{title}</h1>
                 </div>
                 <div className={Styles.modal__content__message}>
-                    <Link className={Styles.Link} href='/consignados'>
-                        <strong> Clique aqui e solicite uma simulação </strong>
-                        </Link>
+                <img className={Styles.img} src={img}/>
+                <div className={Styles.modal__content__button}>
+                <button className={Styles.Button} onClick={() => useRouteToConsignados()} >
+                       Clique aqui e solicite uma simulação 
+                 </button>
                 </div>
                 <div className={Styles.modal__content__button}>
-                    <button  className={Styles.Button} onClick={closeModal}> Fechar </button>
-                </div>
+                    <button className={Styles.Button} onClick={closeModal} >
+                          Fechar
+                    </button>
+            </div>
+            </div>
             </div>
         </div>
         :
         <></>
-        }
-
+        } 
         </>
     )
 }

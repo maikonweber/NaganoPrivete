@@ -55,17 +55,17 @@ export default function Home() {
               <Link href='/fgts'><strong>Simule</strong></Link>
             </div>
 
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
                 <strong> Home Equity </strong>
               <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
               <Link href='/equity'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
 
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
             <strong>Credito Pessoal</strong>
               <p>Uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
               <Link href='/pessoal'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

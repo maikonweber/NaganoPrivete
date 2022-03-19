@@ -1,3 +1,4 @@
+import { StylesProvider } from "@chakra-ui/react"
 import Link from "next/link"
 import Style from "./style.module.css"
 
@@ -25,9 +26,21 @@ function Footer({ id,img, title, text }) {
                                     (11) 2639-0006
                                     0800-035-3737
                                 </>
+                                    
                             </Link>
                         </li>
-                        <li className={Style.itemList}>
+                        <Link href="https://api.whatsapp.com/send/?phone=5511950647974&text=Ola!!!&app_absent=0">
+                        <li className={Style.itemListWa}>
+                       
+                          
+                                <img className={Style.wapp} src="/what.app.png" />
+                                
+                              
+            
+                            
+                            <span> (11) 95064-7974 </span>
+                        </li>
+                        </Link><li className={Style.itemList}>
                             <Link href="/">
                                 <>
                                     <img src="/cinco.svg" />

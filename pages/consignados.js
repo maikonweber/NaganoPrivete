@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`Consignados : ${msg}`} />
+      <Modal open={modal} isOpen={setModal} title={'Credito Consignado'} message={`Consignados : ${msg}`} />
       <Head>
       <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Credito Consignados</title>
@@ -52,17 +52,17 @@ export default function Home() {
             <p>Verificamos em todos os bancos parceiros as possibilidades de empréstimos consignados, sempre garantindo para você os melhores valores taxas e valores liberados.</p>
           </div>
           <div className={Style.bottom}>
-            <div className={Style.card}>
-              <strong>Emprestimo Cred IPVA </strong>
+            {/* <div className={Style.card}> */}
+              {/* <strong>Emprestimo Cred IPVA </strong>
               <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
               <Link href='/detran'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
 
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
             <strong> Home Equity </strong>
               <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
               <Link href='/equity'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
 
             <div className={Style.card}>
             <strong>Emprestimo Garantia FGTS</strong>

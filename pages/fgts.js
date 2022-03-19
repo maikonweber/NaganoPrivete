@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Topbar />
-      <Modal open={modal} isOpen={setModal} title={'Home Equility'} message={`Fgts : ${msg}`} />
+      <Modal open={modal} isOpen={setModal} title={'Crédito com FGTS'} message={`Fgts : ${msg}`} />
       <Head>
         <title>Credito Consignados</title>
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
@@ -52,23 +52,23 @@ export default function Home() {
               pagamento do empréstimo, o dinheiro existente no fundo de garantia poderá cobrir o saldo devedor. Por conta disso, o empréstimo com uso do FGTS possui um baixo risco para os bancos e possibilita que as taxas de juros sejam mais baixas, em comparação com as taxas dos empréstimos comuns..</p>
           </div>
           <div className={Style.bottom}>
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
               <strong> Home Equity </strong>
               <p>Você pode pedir um empréstimo a partir de R$ 30 mil usando imóvel como garantia de pagamento sem você precisar vender ou sair dele, e tem parcelas que cabem no seu bolso.</p>
               <Link href='/equity'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
 
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
               <strong>Emprestimo Cred IPVA </strong>
               <p>Está com IPVA ou documento atrasado ? Parcele conosco em até 12 parcelas. </p>
               <Link href='/detran'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
 
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
               <strong>Credito Pessoal </strong>
               <p>Uma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso, Pode ser vinculado a conta corrente, conta de consumo de energia e boleto</p>
               <Link href='/pessoal'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

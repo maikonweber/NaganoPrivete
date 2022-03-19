@@ -49,11 +49,11 @@ export default function Home() {
              <p>As taxas e prazos dessa modalidade de empréstimo são as melhores do mercado. Além disso, você pode pedir seu empréstimo de até 50% do valor do seu imóvel sem precisar vender ou sair dele.</p>
           </div>
           <div className={Style.bottom}>
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
               <strong>Emprestimo Cred IPVA </strong>
               <p>Está com IPVA atrasado ? Parcele conosco em até 13 parcelas </p>
               <Link href='/detran'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
 
             <div className={Style.card}>
             <strong>Emprestimo Garantia FGTS</strong>
@@ -61,11 +61,11 @@ export default function Home() {
               <Link href='/fgts'><strong>Simule</strong></Link>
             </div>
 
-            <div className={Style.card}>
+            {/* <div className={Style.card}>
             <strong>Credito Pessoal</strong>
               <p>ma determinada quantia em dinheiro, concedida por uma instituição bancária ou financeira, que tem como maior diferencial a liberdade para o seu uso</p>
               <Link href='/pessoal'><strong>Simule</strong></Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
