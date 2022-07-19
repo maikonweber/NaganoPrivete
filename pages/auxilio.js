@@ -33,7 +33,7 @@ export default function auxilio() {
               nem sempre consegue colocar algum bem, como uma casa ou carro, como garantia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TagEmp img='./cash.png' title='Ganhamos o Prêmio Reclame Aqui 2020 e 2021' text='melhor empresa de empréstimo online' />
+      <TagEmp img='./cash.png' title='Ganhamos o Prêmio Reclame Aqui 2020 e 2021, melhor empresa de empréstimo online' text='melhor empresa de empréstimo online' />
       </>
   ) 
 }

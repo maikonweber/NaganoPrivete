@@ -8,13 +8,11 @@ function tagEmp({img,title,text, openModal, link}) {
             
            <div className={Style.cont1}>
                 <img src={img} alt={title}/>
-                <div className={Style.cont}>
-                </div>
+                <strong className={Style.title}>{title}
+                </strong>
+            
+           </div>     
            </div>
-           <div className={Style.cont}>
-           <strong className={Style.title}>{title}</strong>
-           </div>
-        </div>
     )
 }
 

@@ -1,0 +1,207 @@
+
+.container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.cont{
+        display: flex;
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+
+}
+
+.cont.active{
+        flex-direction: row-reverse;
+
+}
+.left{
+        flex:1;
+        display: flex;
+        align-items: flex-start ;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        order:  1 ;
+}        
+.left.active{
+        align-items: flex-end ;
+        order:  2 ;
+        
+}
+.title {
+        font-size: 4rem;
+        font-weight: bold;
+        max-width: 600px;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+}
+
+.text {
+        font-size: 1.3rem;
+        max-width: 600px;
+        color: var(--primary-color);
+
+}
+
+.right{
+        flex:1;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        order:  2 ;
+}
+
+.right.active{
+        flex:1;
+        display: flex;
+        justify-content:  flex-start;
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        order:  1;
+}
+.contImage{
+        position: relative;
+        border-radius: 40px;
+        z-index: 2;
+        background: var(--secondary-color);
+        width: 100%;
+        
+}
+.contImage img{
+        max-width: 600px;
+}
+.contImage::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(121.22deg, #1BD3EB 10.66%, #1E8B99 92.42%);
+        border-radius: 30px;
+        position: absolute;
+        z-index: 1;
+        top:  -20px;
+        left: -20px;
+}
+
+.contImage.active::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(121.22deg, #1BD3EB 10.66%, #1E8B99 92.42%);
+        border-radius: 30px;
+        position: absolute;
+        z-index: 1;
+        top:  -20px;
+        left: 20px;
+}
+.contImage img{   
+        position: relative;
+        left: -40px;
+        top:  -50px;
+        border-radius: 40px;
+        display: block;
+        overflow: hidden;
+        z-index: 3;
+}
+
+.contImage.active img{   
+        position: relative;
+        left:  40px;
+        top:  -50px;
+        border-radius: 40px;
+        display: block;
+        overflow: hidden;
+        z-index: 3;
+}
+
+@media (max-width:1200px){
+        .cont{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .cont.active{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .title{
+                font-size: 3rem;
+        }        
+.contImage::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(121.22deg, #1BD3EB 10.66%, #1E8B99 92.42%);
+        border-radius: 30px;
+        position: initial;
+        z-index: 1;
+        top:  0px;
+        left: 0px;
+}
+
+.contImage.active::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: linear-gradient(121.22deg, #1BD3EB 10.66%, #1E8B99 92.42%);
+        border-radius: 30px;
+        position: initial;
+        z-index: 1;
+        top:  0px;
+        left: 0px;
+}
+.contImage img{   
+        position: initial;
+        left: -40px;
+        top:  -50px;
+        border-radius: 40px;
+        display: block;
+        overflow: hidden;
+        z-index: 3;
+        width: 100%;
+}
+
+.contImage.active img{   
+        position: initial;
+        left:  40px;
+        top:  -50px;
+        border-radius: 40px;
+        display: block;
+        overflow: hidden;
+        z-index: 3;
+}
+        .left{
+                flex:1;
+                display: flex;
+                align-items: center ;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                max-width: 1440px;
+                height: 100%;
+                order:  1 ;
+        }        
+        .left.active{
+                align-items: center ;
+                order:  2 ;
+                
+        }
+
+   
+
+}

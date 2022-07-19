@@ -20,27 +20,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-        top: -50px;
 }
 
 .cont1 {
         display: flex;
         width: 100%;
         color: #FFF;
-        
 }
     
        
 .cont1 img{
         width: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 25px;
-        margin-right: 20px;
-        position: relative;
-        top: 15px;       
+        display: flex;    
 } 
     
 .title {
@@ -89,5 +80,11 @@
 @media screen and (max-width:1200px){
         .container{
                 padding: 60px 20px;
+        }
+}
+
+@media screen and (max-width: 800px) {
+        .cont1 img {
+                display: none;
         }
 }
