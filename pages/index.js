@@ -37,8 +37,8 @@ export default function Home() {
           <Card link="/consignados" img="/financa.png" title="Crédito Consignado" text="Estudamos e pesquisamos as melhores opções de crédito consigando, adequadas aos objetivos"/>
           {/* <Card link="/equity" img="/chart.png" title="Home Equity" text="Realizamos o seu sonho com a solução financeiras Home Equity, adequadas aos objetivos e momento de vida." /> */}
           <Card link="/fgts" img="/money.png" title="Liberação do FGTS" text="Liberamos seu credito de FGTS, adequadas aos objetivos e momento de vida." />
-          {/* <Card link="/detran" img="/car.png" title="Crédito para Veiculos" text="Crédito para aquisição de carros, caminhões, credito para pagamento de IPVA e Documentação" />
-          <Card link="/pessoal" img="/cash.png" title="Crédito Pessoal" text="Crédito Pessoal vinculado a conta corrente, boleto ou pela fatura de conta de consumo"/> */}
+          <Card link="/auxilio" img="/money.png" title="Crédito para Aúxilio Emergencial" text="Crédito para Aúxilio Emergencial" />
+          {/* <Card link="/imobilario" img="/cash.png" title="Crédito Pessoal com Garantia" text=""/>  */}
       </div>
 
       <SectionText 

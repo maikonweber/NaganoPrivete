@@ -20,9 +20,6 @@ export default function Home(props) {
   useEffect( async () => {
     const { 'nextauth.token': token } = parseCookies()
   
-
-
-
     if(!token){
       Router.push('/')
     } else {

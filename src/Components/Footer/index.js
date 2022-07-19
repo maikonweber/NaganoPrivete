@@ -20,14 +20,7 @@ function Footer({ id,img, title, text }) {
                             </Link>
                         </li>
                         <li className={Style.itemList}>
-                            <Link href="/">
-                                <>
-                                    <img src="/dois.svg" />
-                                    (11) 2639-0006
-                                    0800-035-3737
-                                </>
-                                    
-                            </Link>
+                            
                         </li>
                         <Link href="https://api.whatsapp.com/send/?phone=5511950647974&text=Ola!!!&app_absent=0">
                         <li className={Style.itemListWa}>
@@ -35,8 +28,7 @@ function Footer({ id,img, title, text }) {
                           
                                 <img className={Style.wapp} src="/what.app.png" />
                                 
-                              
-            
+        
                             
                             <span> (11) 95064-7974 </span>
                         </li>
