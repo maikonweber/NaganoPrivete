@@ -9,6 +9,7 @@ import { useState } from 'react'
 import CardSlice from '../src/Components/cardSlice/cardSlice'
 import Style from "../styles/consignados.module.css"
 import Link from "next/link"
+import TagEmp from '../src/Components/TagEmp'
 
 export default function auxilio() {
   const [modal, setModal] = useState(false)
@@ -32,10 +33,7 @@ export default function auxilio() {
               nem sempre consegue colocar algum bem, como uma casa ou carro, como garantia" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Notice />
-      <AboutEmp />
-      <CallUs />
-      <Footer />
+      <TagEmp img='./cash.png' title='Ganhamos o Prêmio Reclame Aqui 2020 e 2021' text='melhor empresa de empréstimo online' />
       </>
   ) 
 }
