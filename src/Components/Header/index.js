@@ -5,7 +5,7 @@ function Header() {
         <div className={Style.container}>
             <div className={Style.overlay}></div>
             <div className={Style.boxTitle}>
-                <h1 className={Style.title}>Qual o preço da felicidade?</h1>
+                <h1 className={Style.title}></h1>
             </div>
         </div >
     )
