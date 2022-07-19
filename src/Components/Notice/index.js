@@ -14,7 +14,7 @@ function AboutEmp({img,title,text, openModal, link}) {
            <div className={Style.cont}>
                 <span className={Style.text}>{text}</span>
            </div>
-           <Link href={link}><button className={Style.button}>Simule</button></Link>
+        
         </div>
     )
 }
